@@ -5,7 +5,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Redirect,
+  
 } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Homepage from "./Pages/Homepage";

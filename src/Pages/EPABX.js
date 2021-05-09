@@ -7,12 +7,20 @@ const EPABX = () => {
     <>
       <div className="container my-5">
         <div className="row" id="computer">
-          <h1 className="py-3 pb-4  text-center">Available EPABX Devices</h1>
+          <h1 className="py-3 pb-4  text-center">
+            Available EPABX Devices here in
+          </h1>
           <hr className="mb-5" />
           <div className="col-md-3">
             <div className="card mb-4 product-wap rounded-0">
               <div className="card rounded-0">
-                <img alt=" " alt=" " alt=" " className="card-img rounded-0 img-fluid" src={shop1} />
+                <img
+                  alt=" "
+                  alt=" "
+                  alt=" "
+                  className="card-img rounded-0 img-fluid"
+                  src={shop1}
+                />
                 <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                   <ul className="list-unstyled">
                     <li>
@@ -57,7 +65,13 @@ const EPABX = () => {
           <div className="col-md-3">
             <div className="card mb-4 product-wap rounded-0">
               <div className="card rounded-0">
-                <img alt=" " alt=" " alt=" " className="card-img rounded-0 img-fluid" src={shop2} />
+                <img
+                  alt=" "
+                  alt=" "
+                  alt=" "
+                  className="card-img rounded-0 img-fluid"
+                  src={shop2}
+                />
                 <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                   <ul className="list-unstyled">
                     <li>
@@ -102,7 +116,13 @@ const EPABX = () => {
           <div className="col-md-3">
             <div className="card mb-4 product-wap rounded-0">
               <div className="card rounded-0">
-                <img alt=" " alt=" " alt=" " className="card-img rounded-0 img-fluid" src={shop1} />
+                <img
+                  alt=" "
+                  alt=" "
+                  alt=" "
+                  className="card-img rounded-0 img-fluid"
+                  src={shop1}
+                />
                 <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                   <ul className="list-unstyled">
                     <li>
@@ -147,7 +167,13 @@ const EPABX = () => {
           <div className="col-md-3">
             <div className="card mb-4 product-wap rounded-0">
               <div className="card rounded-0">
-                <img alt=" " alt=" " alt=" " className="card-img rounded-0 img-fluid" src={shop2} />
+                <img
+                  alt=" "
+                  alt=" "
+                  alt=" "
+                  className="card-img rounded-0 img-fluid"
+                  src={shop2}
+                />
                 <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                   <ul className="list-unstyled">
                     <li>
