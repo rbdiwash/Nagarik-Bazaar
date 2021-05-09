@@ -9,20 +9,20 @@ const Contact = () => {
   return (
     <>
       {/* <!-- ======= Contact Section ======= --> */}
-      <section id="contact" class="contact">
-        <div class="container" data-aos="fade-up">
-          <header class="section-header">
+      <section id="contact" className="contact">
+        <div className="container" data-aos="fade-up">
+          <header className="section-header">
             <h2>Contact</h2>
             <p>Contact Us</p>
           </header>
 
-          <div class="row gy-4">
-            <div class="col-lg-6">
-              <div class="row gy-4">
-                <div class="col-md-6">
-                  <div class="info-box">
-                    {/* <i class="bi bi-geo-alt"></i> */}
-                    <i class="fa fa-map"></i>
+          <div className="row gy-4">
+            <div className="col-lg-6">
+              <div className="row gy-4">
+                <div className="col-md-6">
+                  <div className="info-box">
+                    {/* <i className="bi bi-geo-alt"></i> */}
+                    <i className="fa fa-map"></i>
                     <h3>Address</h3>
                     <p>
                       Mitranagar-19,
@@ -31,8 +31,8 @@ const Contact = () => {
                     </p>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="info-box">
+                <div className="col-md-6">
+                  <div className="info-box">
                     <i className="fa fa-phone"></i>
                     <h3>Call Us</h3>
                     <p>
@@ -42,9 +42,9 @@ const Contact = () => {
                     </p>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="info-box">
-                    <i class="fa fa-envelope"></i>
+                <div className="col-md-6">
+                  <div className="info-box">
+                    <i className="fa fa-envelope"></i>
                     <h3>Email Us</h3>
                     <p>
                       mohan@gmail.com
@@ -53,9 +53,9 @@ const Contact = () => {
                     </p>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="info-box">
-                    <i class="fa fa-clock"></i>
+                <div className="col-md-6">
+                  <div className="info-box">
+                    <i className="fa fa-clock"></i>
                     <h3>Open Hours</h3>
                     <p>
                       Sunday - Friday
@@ -67,46 +67,46 @@ const Contact = () => {
               </div>
             </div>
 
-            <div class="col-lg-6">
+            <div className="col-lg-6">
               <form
                 action="forms/contact.php"
                 method="post"
-                class="php-email-form"
+                className="php-email-form"
               >
-                <div class="row gy-4">
-                  <div class="col-md-6">
+                <div className="row gy-4">
+                  <div className="col-md-6">
                     <input
                       type="text"
                       name="name"
-                      class="form-control"
+                      className="form-control"
                       placeholder="Your Name"
                       required
                     />
                   </div>
 
-                  <div class="col-md-6 ">
+                  <div className="col-md-6 ">
                     <input
                       type="email"
-                      class="form-control"
+                      className="form-control"
                       name="email"
                       placeholder="Your Email"
                       required
                     />
                   </div>
 
-                  <div class="col-md-12">
+                  <div className="col-md-12">
                     <input
                       type="text"
-                      class="form-control"
+                      className="form-control"
                       name="subject"
                       placeholder="Subject"
                       required
                     />
                   </div>
 
-                  <div class="col-md-12">
+                  <div className="col-md-12">
                     <textarea
-                      class="form-control"
+                      className="form-control"
                       name="message"
                       rows="6"
                       placeholder="Message"
@@ -114,10 +114,10 @@ const Contact = () => {
                     ></textarea>
                   </div>
 
-                  <div class="col-md-12 text-center">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">
+                  <div className="col-md-12 text-center">
+                    <div className="loading">Loading</div>
+                    <div className="error-message"></div>
+                    <div className="sent-message">
                       Your message has been sent. Thank you!
                     </div>
 

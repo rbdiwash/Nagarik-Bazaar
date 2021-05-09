@@ -27,14 +27,14 @@ const Homepage = () => {
       {/* <!-- Start Banner Hero --> */}
       <div
         id="template-mo-zay-hero-carousel"
-        class="carousel slide"
+        className="carousel slide"
         data-bs-ride="carousel"
       >
-        <ol class="carousel-indicators">
+        <ol className="carousel-indicators">
           <li
             data-bs-target="#template-mo-zay-hero-carousel"
             data-bs-slide-to="0"
-            class="active"
+            className="active"
           ></li>
           <li
             data-bs-target="#template-mo-zay-hero-carousel"
@@ -45,19 +45,19 @@ const Homepage = () => {
             data-bs-slide-to="2"
           ></li>
         </ol>
-        <div class="carousel-inner first">
-          <div class="carousel-item active">
-            <div class="container">
-              <div class="row p-5">
-                <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                  <img class="img-fluid" src={BANNER1} alt="" />
+        <div className="carousel-inner first">
+          <div className="carousel-item active">
+            <div className="container">
+              <div className="row p-5">
+                <div className="mx-auto col-md-8 col-lg-6 order-lg-last">
+                  <img alt=" " className="img-fluid" src={BANNER1} alt=" " />
                 </div>
-                <div class="col-lg-6 mb-0 d-flex align-items-center">
-                  <div class="text-align-left align-self-center">
-                    <h1 class="h1">
+                <div className="col-lg-6 mb-0 d-flex align-items-center">
+                  <div className="text-align-left align-self-center">
+                    <h1 className="h1">
                       <b>CCTV Camera's</b>
                     </h1>
-                    <h3 class="h2">
+                    <h3 className="h2">
                       Tiny and Perfect Camera with High Quality.
                     </h3>
                     <p>
@@ -69,19 +69,19 @@ const Homepage = () => {
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="container">
-              <div class="row p-5">
-                <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                  <img class="img-fluid" src={BANNER2} alt="" />
+          <div className="carousel-item">
+            <div className="container">
+              <div className="row p-5">
+                <div className="mx-auto col-md-8 col-lg-6 order-lg-last">
+                  <img alt=" " className="img-fluid" src={BANNER2} alt=" " />
                 </div>
-                <div class="col-lg-6 mb-0 d-flex align-items-center">
-                  <div class="text-align-left">
-                    <h1 class="h1 text-primary">
+                <div className="col-lg-6 mb-0 d-flex align-items-center">
+                  <div className="text-align-left">
+                    <h1 className="h1 text-primary">
                       {" "}
                       <b> Computer and Accessories </b>
                     </h1>
-                    <h3 class="h2">
+                    <h3 className="h2">
                       Every model, and parts of computers are available here.
                     </h3>
                     <p>
@@ -94,18 +94,18 @@ const Homepage = () => {
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="container">
-              <div class="row p-5">
-                <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                  <img class="img-fluid" src={BANNER3} alt="" />
+          <div className="carousel-item">
+            <div className="container">
+              <div className="row p-5">
+                <div className="mx-auto col-md-8 col-lg-6 order-lg-last">
+                  <img alt=" " className="img-fluid" src={BANNER3} alt=" " />
                 </div>
-                <div class="col-lg-6 mb-0 d-flex align-items-center">
-                  <div class="text-align-left">
-                    <h1 class="h1 text-primary">
+                <div className="col-lg-6 mb-0 d-flex align-items-center">
+                  <div className="text-align-left">
+                    <h1 className="h1 text-primary">
                       <b> Repairing and Maintenance</b>
                     </h1>
-                    <h3 class="h2">
+                    <h3 className="h2">
                       Timely maintenance and repairing is the key to good
                       quality service.{" "}
                     </h3>
@@ -120,29 +120,29 @@ const Homepage = () => {
           </div>
         </div>
         <a
-          class="carousel-control-prev text-decoration-none w-auto ps-3"
+          className="carousel-control-prev text-decoration-none w-auto ps-3"
           href="#template-mo-zay-hero-carousel"
           role="button"
           data-bs-slide="prev"
         >
-          <i class="fa fa-chevron-left"></i>
+          <i className="fa fa-chevron-left"></i>
         </a>
         <a
-          class="carousel-control-next text-decoration-none w-auto pe-3"
+          className="carousel-control-next text-decoration-none w-auto pe-3"
           href="#template-mo-zay-hero-carousel"
           role="button"
           data-bs-slide="next"
         >
-          <i class="fa fa-chevron-right"></i>
+          <i className="fa fa-chevron-right"></i>
         </a>
       </div>
       {/* <!-- End Banner Hero --> */}
 
       {/* //hero section */}
-      <section id="hero" class="hero d-flex align-items-center">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 d-flex flex-column justify-content-center">
+      <section id="hero" className="hero d-flex align-items-center">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6 d-flex flex-column justify-content-center">
               <h1 data-aos="fade-up">
                 We offer modern solutions for growing your business.
               </h1>
@@ -151,40 +151,40 @@ const Homepage = () => {
                 well managed.
               </h2>
               <div data-aos="fade-up" data-aos-delay="600">
-                <div class="text-center text-lg-start">
+                <div className="text-center text-lg-start">
                   <a
                     href="#about"
-                    class="btn btn-primary scrollto d-inline-flex align-items-center justify-content-center align-self-center"
+                    className="btn btn-primary scrollto d-inline-flex align-items-center justify-content-center align-self-center"
                   >
                     <span>Get Started</span>
-                    {/* <i class="fa fa-arrow-right"></i> */}
+                    {/* <i className="fa fa-arrow-right"></i> */}
                   </a>
                 </div>
               </div>
             </div>
             <div
-              class="col-lg-6 hero-img"
+              className="col-lg-6 hero-img"
               data-aos="zoom-out"
               data-aos-delay="200"
             >
-              <img src={BANNER1} class="img-fluid" alt="" />
+              <img alt=" " src={BANNER1} className="img-fluid" alt=" " />
             </div>
           </div>
         </div>
       </section>
 
       {/* <!-- ======= Values Section ======= --> */}
-      <section id="values" class="values">
-        <div class="container" data-aos="fade-up">
-          <header class="section-header">
+      <section id="values" className="values">
+        <div className="container" data-aos="fade-up">
+          <header className="section-header">
             <h2>Our Values</h2>
             <p>We believe in quality.</p>
           </header>
 
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="box" data-aos="fade-up" data-aos-delay="200">
-                <img src={value1} class="img-fluid" alt="" />
+          <div className="row">
+            <div className="col-lg-4">
+              <div className="box" data-aos="fade-up" data-aos-delay="200">
+                <img alt=" " src={value1} className="img-fluid" alt=" " />
                 <h3>Ad cupiditate sed est odio</h3>
                 <p>
                   Eum ad dolor et. Autem aut fugiat debitis voluptatem
@@ -193,9 +193,9 @@ const Homepage = () => {
               </div>
             </div>
 
-            <div class="col-lg-4 mt-4 mt-lg-0">
-              <div class="box" data-aos="fade-up" data-aos-delay="400">
-                <img src={value2} class="img-fluid" alt="" />
+            <div className="col-lg-4 mt-4 mt-lg-0">
+              <div className="box" data-aos="fade-up" data-aos-delay="400">
+                <img alt=" " src={value2} className="img-fluid" alt=" " />
                 <h3>Voluptatem voluptatum alias</h3>
                 <p>
                   Repudiandae amet nihil natus in distinctio suscipit id.
@@ -204,9 +204,9 @@ const Homepage = () => {
               </div>
             </div>
 
-            <div class="col-lg-4 mt-4 mt-lg-0">
-              <div class="box" data-aos="fade-up" data-aos-delay="600">
-                <img src={value3} class="img-fluid" alt="" />
+            <div className="col-lg-4 mt-4 mt-lg-0">
+              <div className="box" data-aos="fade-up" data-aos-delay="600">
+                <img alt=" " src={value3} className="img-fluid" alt=" " />
                 <h3>Fugit cupiditate alias nobis.</h3>
                 <p>
                   Quam rem vitae est autem molestias explicabo debitis sint.
@@ -220,14 +220,14 @@ const Homepage = () => {
       {/* <!-- End Values Section --> */}
 
       {/* <!-- ======= Counts Section ======= --> */}
-      <section id="counts" class="counts">
-        <div class="container" data-aos="fade-up">
-          <div class="row gy-4">
-            <div class="col-lg-3 col-md-6">
-              <div class="count-box">
-                {/* <i class="bi bi-emoji-smile"></i> */}
+      <section id="counts" className="counts">
+        <div className="container" data-aos="fade-up">
+          <div className="row gy-4">
+            <div className="col-lg-3 col-md-6">
+              <div className="count-box">
+                {/* <i className="bi bi-emoji-smile"></i> */}
                 <i
-                  class="fa fa-smile"
+                  className="fa fa-smile"
                   aria-hidden="true"
                   style={{ color: "#012970" }}
                 ></i>
@@ -237,7 +237,7 @@ const Homepage = () => {
                     data-purecounter-start="0"
                     data-purecounter-end="232"
                     data-purecounter-duration="1"
-                    class="purecounter"
+                    className="purecounter"
                   >
                     <CountUp end={140} duration={2.75}></CountUp>
                   </span>
@@ -246,10 +246,10 @@ const Homepage = () => {
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-6">
-              <div class="count-box">
+            <div className="col-lg-3 col-md-6">
+              <div className="count-box">
                 <i
-                  class="fa fa-newspaper"
+                  className="fa fa-newspaper"
                   // aria-hidden="true"
                   style={{ color: " #ee6c20" }}
                 ></i>
@@ -258,7 +258,7 @@ const Homepage = () => {
                     data-purecounter-start="0"
                     data-purecounter-end="521"
                     data-purecounter-duration="1"
-                    class="purecounter"
+                    className="purecounter"
                   >
                     <CountUp end={140} duration={2.75}></CountUp>
                   </span>
@@ -267,11 +267,11 @@ const Homepage = () => {
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-6">
-              <div class="count-box">
-                {/* <i class="bi bi-headset" style={{ color: "#15be56" }}></i> */}
+            <div className="col-lg-3 col-md-6">
+              <div className="count-box">
+                {/* <i className="bi bi-headset" style={{ color: "#15be56" }}></i> */}
                 <i
-                  class="fa fa-headphones"
+                  className="fa fa-headphones"
                   aria-hidden="true"
                   style={{ color: "#15be56" }}
                 ></i>
@@ -280,7 +280,7 @@ const Homepage = () => {
                     data-purecounter-start="0"
                     data-purecounter-end="1463"
                     data-purecounter-duration="1"
-                    class="purecounter"
+                    className="purecounter"
                   >
                     <CountUp end={1265} duration={2.75}></CountUp>
                   </span>
@@ -289,15 +289,15 @@ const Homepage = () => {
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-6">
-              <div class="count-box">
-                <i class="fa fa-users" style={{ color: "#bb0852" }}></i>
+            <div className="col-lg-3 col-md-6">
+              <div className="count-box">
+                <i className="fa fa-users" style={{ color: "#bb0852" }}></i>
                 <div>
                   <span
                     data-purecounter-start="0"
                     data-purecounter-end="15"
                     data-purecounter-duration="1"
-                    class="purecounter"
+                    className="purecounter"
                   >
                     <CountUp end={5} duration={2.75}></CountUp>
                   </span>
@@ -311,57 +311,57 @@ const Homepage = () => {
       {/* <!-- End Counts Section --> */}
 
       {/* <!-- ======= Features Section ======= --> */}
-      <section id="features" class="features">
-        <div class="container" data-aos="fade-up">
-          <header class="section-header">
+      <section id="features" className="features">
+        <div className="container" data-aos="fade-up">
+          <header className="section-header">
             <h2>Features</h2>
             <p>We have got so many features in our pocket to serve.</p>
           </header>
 
-          <div class="row">
-            <div class="col-lg-6">
-              <img src={features} class="img-fluid" alt="" />
+          <div className="row">
+            <div className="col-lg-6">
+              <img alt=" " src={features} className="img-fluid" alt=" " />
             </div>
 
-            <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
-              <div class="row align-self-center gy-4">
-                <div class="col-md-6" data-aos="zoom-out" data-aos-delay="200">
-                  <div class="feature-box d-flex align-items-center">
+            <div className="col-lg-6 mt-5 mt-lg-0 d-flex">
+              <div className="row align-self-center gy-4">
+                <div className="col-md-6" data-aos="zoom-out" data-aos-delay="200">
+                  <div className="feature-box d-flex align-items-center">
                     <i className="fa fa-check"></i>
                     <h3>Eos aspernatur rem</h3>
                   </div>
                 </div>
 
-                <div class="col-md-6" data-aos="zoom-out" data-aos-delay="300">
-                  <div class="feature-box d-flex align-items-center">
+                <div className="col-md-6" data-aos="zoom-out" data-aos-delay="300">
+                  <div className="feature-box d-flex align-items-center">
                     <i className="fa fa-check"></i>
                     <h3>Facilis neque ipsa</h3>
                   </div>
                 </div>
 
-                <div class="col-md-6" data-aos="zoom-out" data-aos-delay="400">
-                  <div class="feature-box d-flex align-items-center">
+                <div className="col-md-6" data-aos="zoom-out" data-aos-delay="400">
+                  <div className="feature-box d-flex align-items-center">
                     <i className="fa fa-check"></i>
                     <h3>Volup amet voluptas</h3>
                   </div>
                 </div>
 
-                <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
-                  <div class="feature-box d-flex align-items-center">
+                <div className="col-md-6" data-aos="zoom-out" data-aos-delay="500">
+                  <div className="feature-box d-flex align-items-center">
                     <i className="fa fa-check"></i>
                     <h3>Rerum omnis sint</h3>
                   </div>
                 </div>
 
-                <div class="col-md-6" data-aos="zoom-out" data-aos-delay="600">
-                  <div class="feature-box d-flex align-items-center">
+                <div className="col-md-6" data-aos="zoom-out" data-aos-delay="600">
+                  <div className="feature-box d-flex align-items-center">
                     <i className="fa fa-check"></i>
                     <h3>Alias possimus</h3>
                   </div>
                 </div>
 
-                <div class="col-md-6" data-aos="zoom-out" data-aos-delay="700">
-                  <div class="feature-box d-flex align-items-center">
+                <div className="col-md-6" data-aos="zoom-out" data-aos-delay="700">
+                  <div className="feature-box d-flex align-items-center">
                     <i className="fa fa-check"></i>
                     <h3>Repellendus mollitia</h3>
                   </div>
@@ -375,42 +375,42 @@ const Homepage = () => {
       </section>
 
       {/* <!-- Start Categories of The Month --> */}
-      <section class="container py-5">
-        <div class="row text-center pt-3">
-          <div class="col-lg-6 m-auto">
-            <h1 class="h1">Categories of The Month</h1>
+      <section className="container py-5">
+        <div className="row text-center pt-3">
+          <div className="col-lg-6 m-auto">
+            <h1 className="h1">Categories of The Month</h1>
             <p>
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
               officia deserunt mollit anim id est laborum.
             </p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12 col-md-4 p-5 mt-3">
+        <div className="row">
+          <div className="col-12 col-md-4 p-5 mt-3">
             <a href="#">
-              <img src={cat1} class="rounded-circle img-fluid border" />
+              <img alt=" " src={cat1} className="rounded-circle img-fluid border" />
             </a>
-            <h5 class="text-center mt-3 mb-3">Watches</h5>
-            <p class="text-center">
-              <a class="btn btn-primary">Go Shop</a>
+            <h5 className="text-center mt-3 mb-3">Watches</h5>
+            <p className="text-center">
+              <a className="btn btn-primary">Go Shop</a>
             </p>
           </div>
-          <div class="col-12 col-md-4 p-5 mt-3">
+          <div className="col-12 col-md-4 p-5 mt-3">
             <a href="#">
-              <img src={cat2} class="rounded-circle img-fluid border" />
+              <img alt=" " src={cat2} className="rounded-circle img-fluid border" />
             </a>
-            <h2 class="h5 text-center mt-3 mb-3">Shoes</h2>
-            <p class="text-center">
-              <a class="btn btn-primary">Go Shop</a>
+            <h2 className="h5 text-center mt-3 mb-3">Shoes</h2>
+            <p className="text-center">
+              <a className="btn btn-primary">Go Shop</a>
             </p>
           </div>
-          <div class="col-12 col-md-4 p-5 mt-3">
+          <div className="col-12 col-md-4 p-5 mt-3">
             <a href="#">
-              <img src={cat3} class="rounded-circle img-fluid border" />
+              <img alt=" " src={cat3} className="rounded-circle img-fluid border" />
             </a>
-            <h2 class="h5 text-center mt-3 mb-3">Accessories</h2>
-            <p class="text-center">
-              <a class="btn btn-primary">Go Shop</a>
+            <h2 className="h5 text-center mt-3 mb-3">Accessories</h2>
+            <p className="text-center">
+              <a className="btn btn-primary">Go Shop</a>
             </p>
           </div>
         </div>
@@ -418,105 +418,105 @@ const Homepage = () => {
       {/* <!-- End Categories of The Month --> */}
 
       {/* <!-- Start Featured Product --> */}
-      <section class="bg-light">
-        <div class="container py-5">
-          <div class="row text-center py-3">
-            <div class="col-lg-6 m-auto">
-              <h1 class="h1">Services</h1>
+      <section className="bg-light">
+        <div className="container py-5">
+          <div className="row text-center py-3">
+            <div className="col-lg-6 m-auto">
+              <h1 className="h1">Services</h1>
               <p>
                 Reprehenderit in voluptate velit esse cillum dolore eu fugiat
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident.
               </p>
             </div>
           </div>
-          <div class="row">
-            <div class="col-12 col-md-4 mb-4">
-              <div class="card h-100">
+          <div className="row">
+            <div className="col-12 col-md-4 mb-4">
+              <div className="card h-100">
                 <a href="shop-single.html">
-                  <img src={feat1} class="card-img-top" alt="..." />
+                  <img alt=" " src={feat1} className="card-img-top" alt="..." />
                 </a>
-                <div class="card-body">
-                  <ul class="list-unstyled d-flex justify-content-between">
+                <div className="card-body">
+                  <ul className="list-unstyled d-flex justify-content-between">
                     <li>
-                      <i class="text-warning fa fa-star"></i>
-                      <i class="text-warning fa fa-star"></i>
-                      <i class="text-warning fa fa-star"></i>
-                      <i class="text-muted fa fa-star"></i>
-                      <i class="text-muted fa fa-star"></i>
+                      <i className="text-warning fa fa-star"></i>
+                      <i className="text-warning fa fa-star"></i>
+                      <i className="text-warning fa fa-star"></i>
+                      <i className="text-muted fa fa-star"></i>
+                      <i className="text-muted fa fa-star"></i>
                     </li>
-                    <li class="text-muted text-right">$240.00</li>
+                    <li className="text-muted text-right">$240.00</li>
                   </ul>
                   <a
                     href="shop-single.html"
-                    class="h2 text-decoration-none text-dark"
+                    className="h2 text-decoration-none text-dark"
                   >
                     Gym Weight
                   </a>
-                  <p class="card-text">
+                  <p className="card-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Sunt in culpa qui officia deserunt.
                   </p>
-                  <p class="text-muted">Reviews (24)</p>
+                  <p className="text-muted">Reviews (24)</p>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-4 mb-4">
-              <div class="card h-100">
+            <div className="col-12 col-md-4 mb-4">
+              <div className="card h-100">
                 <a href="shop-single.html">
-                  <img src={feat2} class="card-img-top" alt="..." />
+                  <img alt=" " src={feat2} className="card-img-top" alt="..." />
                 </a>
-                <div class="card-body">
-                  <ul class="list-unstyled d-flex justify-content-between">
+                <div className="card-body">
+                  <ul className="list-unstyled d-flex justify-content-between">
                     <li>
-                      <i class="text-warning fa fa-star"></i>
-                      <i class="text-warning fa fa-star"></i>
-                      <i class="text-warning fa fa-star"></i>
-                      <i class="text-muted fa fa-star"></i>
-                      <i class="text-muted fa fa-star"></i>
+                      <i className="text-warning fa fa-star"></i>
+                      <i className="text-warning fa fa-star"></i>
+                      <i className="text-warning fa fa-star"></i>
+                      <i className="text-muted fa fa-star"></i>
+                      <i className="text-muted fa fa-star"></i>
                     </li>
-                    <li class="text-muted text-right">$480.00</li>
+                    <li className="text-muted text-right">$480.00</li>
                   </ul>
                   <a
                     href="shop-single.html"
-                    class="h2 text-decoration-none text-dark"
+                    className="h2 text-decoration-none text-dark"
                   >
                     Cloud Nike Shoes
                   </a>
-                  <p class="card-text">
+                  <p className="card-text">
                     Aenean gravida dignissim finibus. Nullam ipsum diam, posuere
                     vitae pharetra sed, commodo ullamcorper.
                   </p>
-                  <p class="text-muted">Reviews (48)</p>
+                  <p className="text-muted">Reviews (48)</p>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-4 mb-4">
-              <div class="card h-100">
+            <div className="col-12 col-md-4 mb-4">
+              <div className="card h-100">
                 <a href="shop-single.html">
-                  <img src={feat3} class="card-img-top" alt="..." />
+                  <img alt=" " src={feat3} className="card-img-top" alt="..." />
                 </a>
-                <div class="card-body">
-                  <ul class="list-unstyled d-flex justify-content-between">
+                <div className="card-body">
+                  <ul className="list-unstyled d-flex justify-content-between">
                     <li>
-                      <i class="text-warning fa fa-star"></i>
-                      <i class="text-warning fa fa-star"></i>
-                      <i class="text-warning fa fa-star"></i>
-                      <i class="text-warning fa fa-star"></i>
-                      <i class="text-warning fa fa-star"></i>
+                      <i className="text-warning fa fa-star"></i>
+                      <i className="text-warning fa fa-star"></i>
+                      <i className="text-warning fa fa-star"></i>
+                      <i className="text-warning fa fa-star"></i>
+                      <i className="text-warning fa fa-star"></i>
                     </li>
-                    <li class="text-muted text-right">$360.00</li>
+                    <li className="text-muted text-right">$360.00</li>
                   </ul>
                   <a
                     href="shop-single.html"
-                    class="h2 text-decoration-none text-dark"
+                    className="h2 text-decoration-none text-dark"
                   >
                     Summer Addides Shoes
                   </a>
-                  <p class="card-text">
+                  <p className="card-text">
                     Curabitur ac mi sit amet diam luctus porta. Phasellus
                     pulvinar sagittis diam, et scelerisque ipsum lobortis nec.
                   </p>
-                  <p class="text-muted">Reviews (74)</p>
+                  <p className="text-muted">Reviews (74)</p>
                 </div>
               </div>
             </div>

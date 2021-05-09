@@ -28,49 +28,49 @@ const Shop = () => {
   return (
     <div>
       {/* <!-- Start Content --> */}
-      <div class="container py-5">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="row">
-              <div class="col-md-6">
-                <ul class="list-inline shop-top-menu pb-3 pt-1">
-                  <li class="list-inline-item">
-                    <a class="h3 text-dark text-decoration-none mr-3" href="#">
+      <div className="container py-5">
+        <div className="row">
+          <div className="col-lg-12">
+            <div className="row">
+              <div className="col-md-6">
+                <ul className="list-inline shop-top-menu pb-3 pt-1">
+                  <li className="list-inline-item">
+                    <a className="h3 text-dark text-decoration-none mr-3" href="#">
                       All Categories
                     </a>
                   </li>
-                  <li class="list-inline-item">
+                  <li className="list-inline-item">
                     <a
-                      class="h3 text-dark text-decoration-none mr-3"
+                      className="h3 text-dark text-decoration-none mr-3"
                       href="#computer"
                     >
                       -Computer
                     </a>
                   </li>
-                  <li class="list-inline-item">
+                  <li className="list-inline-item">
                     <a
-                      class="h3 text-dark text-decoration-none"
+                      className="h3 text-dark text-decoration-none"
                       href="#printer"
                     >
                       -Printers
                     </a>
                   </li>
-                  <li class="list-inline-item">
-                    <a class="h3 text-dark text-decoration-none" href="#cctv">
+                  <li className="list-inline-item">
+                    <a className="h3 text-dark text-decoration-none" href="#cctv">
                       -CCTV
                     </a>
                   </li>
-                  <li class="list-inline-item">
-                    <a class="h3 text-dark text-decoration-none" href="#epabx">
+                  <li className="list-inline-item">
+                    <a className="h3 text-dark text-decoration-none" href="#epabx">
                       -EPABX
                     </a>
                   </li>
                 </ul>
               </div>
 
-              {/* <div class="col-md-6 pb-4">
-                <div class="d-flex">
-                  <select class="form-control">
+              {/* <div className="col-md-6 pb-4">
+                <div className="d-flex">
+                  <select className="form-control">
                     <option>Featured</option>
                     <option>A to Z</option>
                     <option>Item</option>
@@ -78,7 +78,7 @@ const Shop = () => {
                 </div>
               </div> */}
             </div>
-            <div class="row">
+            <div className="row">
               <Carousel
                 autoPlay={true}
                 autoPlaySpeed={3000}
@@ -86,291 +86,291 @@ const Shop = () => {
                 responsive={responsive}
                 keyBoardControl={true}
               >
-                <div class="col-md-10">
-                  <div class="card mb-4 product-wap rounded-0">
-                    <div class="card rounded-0">
-                      <img class="card-img rounded-0 img-fluid" src={shop1} />
-                      <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
-                        <ul class="list-unstyled">
+                <div className="col-md-10">
+                  <div className="card mb-4 product-wap rounded-0">
+                    <div className="card rounded-0">
+                      <img alt=" " className="card-img rounded-0 img-fluid" src={shop1} />
+                      <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                        <ul className="list-unstyled">
                           <li>
                             <a
-                              class="btn btn-success text-white"
+                              className="btn btn-success text-white"
                               href="shop-single.html"
                             >
-                              <i class="far fa-heart"></i>
+                              <i className="far fa-heart"></i>
                             </a>
                           </li>
                           <li>
                             <a
-                              class="btn btn-success text-white mt-2"
+                              className="btn btn-success text-white mt-2"
                               href="shop-single.html"
                             >
-                              <i class="far fa-eye"></i>
+                              <i className="far fa-eye"></i>
                             </a>
                           </li>
                           <li>
                             <a
-                              class="btn btn-success text-white mt-2"
+                              className="btn btn-success text-white mt-2"
                               href="shop-single.html"
                             >
-                              <i class="fas fa-cart-plus"></i>
+                              <i className="fas fa-cart-plus"></i>
                             </a>
                           </li>
                         </ul>
                       </div>
                     </div>
-                    <div class="card-body">
+                    <div className="card-body">
                       <a
                         href="shop-single.html"
-                        class="h3 text-decoration-none"
+                        className="h3 text-decoration-none"
                       >
                         Oupidatat non
                       </a>
-                      <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                      <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
                         <li>M/L/X/XL</li>
                       </ul>
-                      <ul class="list-unstyled d-flex justify-content-center mb-1"></ul>
-                      <p class="text-center mb-0">$250.00</p>
+                      <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
+                      <p className="text-center mb-0">$250.00</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-10">
-                  <div class="card mb-4 product-wap rounded-0">
-                    <div class="card rounded-0">
-                      <img class="card-img rounded-0 img-fluid" src={shop2} />
-                      <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
-                        <ul class="list-unstyled">
+                <div className="col-md-10">
+                  <div className="card mb-4 product-wap rounded-0">
+                    <div className="card rounded-0">
+                      <img alt=" " className="card-img rounded-0 img-fluid" src={shop2} />
+                      <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                        <ul className="list-unstyled">
                           <li>
                             <a
-                              class="btn btn-success text-white"
+                              className="btn btn-success text-white"
                               href="shop-single.html"
                             >
-                              <i class="far fa-heart"></i>
+                              <i className="far fa-heart"></i>
                             </a>
                           </li>
                           <li>
                             <a
-                              class="btn btn-success text-white mt-2"
+                              className="btn btn-success text-white mt-2"
                               href="shop-single.html"
                             >
-                              <i class="far fa-eye"></i>
+                              <i className="far fa-eye"></i>
                             </a>
                           </li>
                           <li>
                             <a
-                              class="btn btn-success text-white mt-2"
+                              className="btn btn-success text-white mt-2"
                               href="shop-single.html"
                             >
-                              <i class="fas fa-cart-plus"></i>
+                              <i className="fas fa-cart-plus"></i>
                             </a>
                           </li>
                         </ul>
                       </div>
                     </div>
-                    <div class="card-body">
+                    <div className="card-body">
                       <a
                         href="shop-single.html"
-                        class="h3 text-decoration-none"
+                        className="h3 text-decoration-none"
                       >
                         Oupidatat non
                       </a>
-                      <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                      <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
                         <li>M/L/X/XL</li>
                       </ul>
-                      <ul class="list-unstyled d-flex justify-content-center mb-1"></ul>
-                      <p class="text-center mb-0">$250.00</p>
+                      <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
+                      <p className="text-center mb-0">$250.00</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-10">
-                  <div class="card mb-4 product-wap rounded-0">
-                    <div class="card rounded-0">
-                      <img class="card-img rounded-0 img-fluid" src={shop1} />
-                      <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
-                        <ul class="list-unstyled">
+                <div className="col-md-10">
+                  <div className="card mb-4 product-wap rounded-0">
+                    <div className="card rounded-0">
+                      <img alt=" " className="card-img rounded-0 img-fluid" src={shop1} />
+                      <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                        <ul className="list-unstyled">
                           <li>
                             <a
-                              class="btn btn-success text-white"
+                              className="btn btn-success text-white"
                               href="shop-single.html"
                             >
-                              <i class="far fa-heart"></i>
+                              <i className="far fa-heart"></i>
                             </a>
                           </li>
                           <li>
                             <a
-                              class="btn btn-success text-white mt-2"
+                              className="btn btn-success text-white mt-2"
                               href="shop-single.html"
                             >
-                              <i class="far fa-eye"></i>
+                              <i className="far fa-eye"></i>
                             </a>
                           </li>
                           <li>
                             <a
-                              class="btn btn-success text-white mt-2"
+                              className="btn btn-success text-white mt-2"
                               href="shop-single.html"
                             >
-                              <i class="fas fa-cart-plus"></i>
+                              <i className="fas fa-cart-plus"></i>
                             </a>
                           </li>
                         </ul>
                       </div>
                     </div>
-                    <div class="card-body">
+                    <div className="card-body">
                       <a
                         href="shop-single.html"
-                        class="h3 text-decoration-none"
+                        className="h3 text-decoration-none"
                       >
                         Oupidatat non
                       </a>
-                      <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                      <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
                         <li>M/L/X/XL</li>
                       </ul>
-                      <ul class="list-unstyled d-flex justify-content-center mb-1"></ul>
-                      <p class="text-center mb-0">$250.00</p>
+                      <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
+                      <p className="text-center mb-0">$250.00</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-10">
-                  <div class="card mb-4 product-wap rounded-0">
-                    <div class="card rounded-0">
-                      <img class="card-img rounded-0 img-fluid" src={shop2} />
-                      <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
-                        <ul class="list-unstyled">
+                <div className="col-md-10">
+                  <div className="card mb-4 product-wap rounded-0">
+                    <div className="card rounded-0">
+                      <img alt=" " className="card-img rounded-0 img-fluid" src={shop2} />
+                      <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                        <ul className="list-unstyled">
                           <li>
                             <a
-                              class="btn btn-success text-white"
+                              className="btn btn-success text-white"
                               href="shop-single.html"
                             >
-                              <i class="far fa-heart"></i>
+                              <i className="far fa-heart"></i>
                             </a>
                           </li>
                           <li>
                             <a
-                              class="btn btn-success text-white mt-2"
+                              className="btn btn-success text-white mt-2"
                               href="shop-single.html"
                             >
-                              <i class="far fa-eye"></i>
+                              <i className="far fa-eye"></i>
                             </a>
                           </li>
                           <li>
                             <a
-                              class="btn btn-success text-white mt-2"
+                              className="btn btn-success text-white mt-2"
                               href="shop-single.html"
                             >
-                              <i class="fas fa-cart-plus"></i>
+                              <i className="fas fa-cart-plus"></i>
                             </a>
                           </li>
                         </ul>
                       </div>
                     </div>
-                    <div class="card-body">
+                    <div className="card-body">
                       <a
                         href="shop-single.html"
-                        class="h3 text-decoration-none"
+                        className="h3 text-decoration-none"
                       >
                         Oupidatat non
                       </a>
-                      <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                      <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
                         <li>M/L/X/XL</li>
                       </ul>
-                      <ul class="list-unstyled d-flex justify-content-center mb-1"></ul>
-                      <p class="text-center mb-0">$250.00</p>
+                      <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
+                      <p className="text-center mb-0">$250.00</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-10">
-                  <div class="card mb-4 product-wap rounded-0">
-                    <div class="card rounded-0">
-                      <img class="card-img rounded-0 img-fluid" src={shop1} />
-                      <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
-                        <ul class="list-unstyled">
+                <div className="col-md-10">
+                  <div className="card mb-4 product-wap rounded-0">
+                    <div className="card rounded-0">
+                      <img alt=" " className="card-img rounded-0 img-fluid" src={shop1} />
+                      <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                        <ul className="list-unstyled">
                           <li>
                             <a
-                              class="btn btn-success text-white"
+                              className="btn btn-success text-white"
                               href="shop-single.html"
                             >
-                              <i class="far fa-heart"></i>
+                              <i className="far fa-heart"></i>
                             </a>
                           </li>
                           <li>
                             <a
-                              class="btn btn-success text-white mt-2"
+                              className="btn btn-success text-white mt-2"
                               href="shop-single.html"
                             >
-                              <i class="far fa-eye"></i>
+                              <i className="far fa-eye"></i>
                             </a>
                           </li>
                           <li>
                             <a
-                              class="btn btn-success text-white mt-2"
+                              className="btn btn-success text-white mt-2"
                               href="shop-single.html"
                             >
-                              <i class="fas fa-cart-plus"></i>
+                              <i className="fas fa-cart-plus"></i>
                             </a>
                           </li>
                         </ul>
                       </div>
                     </div>
-                    <div class="card-body">
+                    <div className="card-body">
                       <a
                         href="shop-single.html"
-                        class="h3 text-decoration-none"
+                        className="h3 text-decoration-none"
                       >
                         Oupidatat non
                       </a>
-                      <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                      <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
                         <li>M/L/X/XL</li>
                       </ul>
-                      <ul class="list-unstyled d-flex justify-content-center mb-1"></ul>
-                      <p class="text-center mb-0">$250.00</p>
+                      <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
+                      <p className="text-center mb-0">$250.00</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-10">
-                  <div class="card mb-4 product-wap rounded-0">
-                    <div class="card rounded-0">
-                      <img class="card-img rounded-0 img-fluid" src={shop2} />
-                      <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
-                        <ul class="list-unstyled">
+                <div className="col-md-10">
+                  <div className="card mb-4 product-wap rounded-0">
+                    <div className="card rounded-0">
+                      <img alt=" " className="card-img rounded-0 img-fluid" src={shop2} />
+                      <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                        <ul className="list-unstyled">
                           <li>
                             <a
-                              class="btn btn-success text-white"
+                              className="btn btn-success text-white"
                               href="shop-single.html"
                             >
-                              <i class="far fa-heart"></i>
+                              <i className="far fa-heart"></i>
                             </a>
                           </li>
                           <li>
                             <a
-                              class="btn btn-success text-white mt-2"
+                              className="btn btn-success text-white mt-2"
                               href="shop-single.html"
                             >
-                              <i class="far fa-eye"></i>
+                              <i className="far fa-eye"></i>
                             </a>
                           </li>
                           <li>
                             <a
-                              class="btn btn-success text-white mt-2"
+                              className="btn btn-success text-white mt-2"
                               href="shop-single.html"
                             >
-                              <i class="fas fa-cart-plus"></i>
+                              <i className="fas fa-cart-plus"></i>
                             </a>
                           </li>
                         </ul>
                       </div>
                     </div>
-                    <div class="card-body">
+                    <div className="card-body">
                       <a
                         href="shop-single.html"
-                        class="h3 text-decoration-none"
+                        className="h3 text-decoration-none"
                       >
                         Oupidatat non
                       </a>
-                      <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                      <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
                         <li>M/L/X/XL</li>
                       </ul>
-                      <ul class="list-unstyled d-flex justify-content-center mb-1"></ul>
-                      <p class="text-center mb-0">$250.00</p>
+                      <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
+                      <p className="text-center mb-0">$250.00</p>
                     </div>
                   </div>
                 </div>
@@ -380,187 +380,187 @@ const Shop = () => {
             {/* computer */}
             <div className="row" id="computer">
               <h1 className="py-3 pb-4  text-center">Computers</h1>
-              <div class="col-md-3">
-                <div class="card mb-4 product-wap rounded-0">
-                  <div class="card rounded-0">
-                    <img class="card-img rounded-0 img-fluid" src={shop1} />
-                    <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
-                      <ul class="list-unstyled">
+              <div className="col-md-3">
+                <div className="card mb-4 product-wap rounded-0">
+                  <div className="card rounded-0">
+                    <img alt=" " className="card-img rounded-0 img-fluid" src={shop1} />
+                    <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                      <ul className="list-unstyled">
                         <li>
                           <a
-                            class="btn btn-success text-white"
+                            className="btn btn-success text-white"
                             href="shop-single.html"
                           >
-                            <i class="far fa-heart"></i>
+                            <i className="far fa-heart"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="far fa-eye"></i>
+                            <i className="far fa-eye"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="fas fa-cart-plus"></i>
+                            <i className="fas fa-cart-plus"></i>
                           </a>
                         </li>
                       </ul>
                     </div>
                   </div>
-                  <div class="card-body">
-                    <a href="shop-single.html" class="h3 text-decoration-none">
+                  <div className="card-body">
+                    <a href="shop-single.html" className="h3 text-decoration-none">
                       Dell Gaming PC
                     </a>
-                    <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                    <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
                       <li>8GB RAM/500GB HDD</li>
                     </ul>
-                    <ul class="list-unstyled d-flex justify-content-center mb-1"></ul>
-                    <p class="mb-0">
+                    <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
+                    <p className="mb-0">
                       <strike>Rs. 54,000</strike> Rs. 50,000
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
-                <div class="card mb-4 product-wap rounded-0">
-                  <div class="card rounded-0">
-                    <img class="card-img rounded-0 img-fluid" src={shop2} />
-                    <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
-                      <ul class="list-unstyled">
+              <div className="col-md-3">
+                <div className="card mb-4 product-wap rounded-0">
+                  <div className="card rounded-0">
+                    <img alt=" " className="card-img rounded-0 img-fluid" src={shop2} />
+                    <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                      <ul className="list-unstyled">
                         <li>
                           <a
-                            class="btn btn-success text-white"
+                            className="btn btn-success text-white"
                             href="shop-single.html"
                           >
-                            <i class="far fa-heart"></i>
+                            <i className="far fa-heart"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="far fa-eye"></i>
+                            <i className="far fa-eye"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="fas fa-cart-plus"></i>
+                            <i className="fas fa-cart-plus"></i>
                           </a>
                         </li>
                       </ul>
                     </div>
                   </div>
-                  <div class="card-body">
-                    <a href="shop-single.html" class="h3 text-decoration-none">
+                  <div className="card-body">
+                    <a href="shop-single.html" className="h3 text-decoration-none">
                       Dell PC
                     </a>
-                    <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                    <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
                       <li>8GB RAM/500GB HDD</li>
                     </ul>
-                    <ul class="list-unstyled d-flex justify-content-center mb-1"></ul>
-                    <p class="mb-0">
+                    <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
+                    <p className="mb-0">
                       <strike>Rs. 46,000</strike> Rs. 42,000
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
-                <div class="card mb-4 product-wap rounded-0">
-                  <div class="card rounded-0">
-                    <img class="card-img rounded-0 img-fluid" src={shop1} />
-                    <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
-                      <ul class="list-unstyled">
+              <div className="col-md-3">
+                <div className="card mb-4 product-wap rounded-0">
+                  <div className="card rounded-0">
+                    <img alt=" " className="card-img rounded-0 img-fluid" src={shop1} />
+                    <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                      <ul className="list-unstyled">
                         <li>
                           <a
-                            class="btn btn-success text-white"
+                            className="btn btn-success text-white"
                             href="shop-single.html"
                           >
-                            <i class="far fa-heart"></i>
+                            <i className="far fa-heart"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="far fa-eye"></i>
+                            <i className="far fa-eye"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="fas fa-cart-plus"></i>
+                            <i className="fas fa-cart-plus"></i>
                           </a>
                         </li>
                       </ul>
                     </div>
                   </div>
-                  <div class="card-body">
-                    <a href="shop-single.html" class="h3 text-decoration-none">
+                  <div className="card-body">
+                    <a href="shop-single.html" className="h3 text-decoration-none">
                       Oupidatat non
                     </a>
-                    <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                    <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
                       <li>M/L/X/XL</li>
                     </ul>
-                    <ul class="list-unstyled d-flex justify-content-center mb-1"></ul>
-                    <p class="text-center mb-0">$250.00</p>
+                    <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
+                    <p className="text-center mb-0">$250.00</p>
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
-                <div class="card mb-4 product-wap rounded-0">
-                  <div class="card rounded-0">
-                    <img class="card-img rounded-0 img-fluid" src={shop2} />
-                    <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
-                      <ul class="list-unstyled">
+              <div className="col-md-3">
+                <div className="card mb-4 product-wap rounded-0">
+                  <div className="card rounded-0">
+                    <img alt=" " className="card-img rounded-0 img-fluid" src={shop2} />
+                    <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                      <ul className="list-unstyled">
                         <li>
                           <a
-                            class="btn btn-success text-white"
+                            className="btn btn-success text-white"
                             href="shop-single.html"
                           >
-                            <i class="far fa-heart"></i>
+                            <i className="far fa-heart"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="far fa-eye"></i>
+                            <i className="far fa-eye"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="fas fa-cart-plus"></i>
+                            <i className="fas fa-cart-plus"></i>
                           </a>
                         </li>
                       </ul>
                     </div>
                   </div>
-                  <div class="card-body">
-                    <a href="shop-single.html" class="h3 text-decoration-none">
+                  <div className="card-body">
+                    <a href="shop-single.html" className="h3 text-decoration-none">
                       Oupidatat non
                     </a>
-                    <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                    <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
                       <li>M/L/X/XL</li>
                     </ul>
-                    <ul class="list-unstyled d-flex justify-content-center mb-1"></ul>
-                    <p class="text-center mb-0">$250.00</p>
+                    <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
+                    <p className="text-center mb-0">$250.00</p>
                   </div>
                 </div>
               </div>
@@ -578,183 +578,183 @@ const Shop = () => {
             {/* printer */}
             <div className="row" id="printer">
               <h1 className="py-3 pb-4  text-center">Printers</h1>
-              <div class="col-md-3">
-                <div class="card mb-4 product-wap rounded-0">
-                  <div class="card rounded-0">
-                    <img class="card-img rounded-0 img-fluid" src={shop1} />
-                    <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
-                      <ul class="list-unstyled">
+              <div className="col-md-3">
+                <div className="card mb-4 product-wap rounded-0">
+                  <div className="card rounded-0">
+                    <img alt=" " className="card-img rounded-0 img-fluid" src={shop1} />
+                    <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                      <ul className="list-unstyled">
                         <li>
                           <a
-                            class="btn btn-success text-white"
+                            className="btn btn-success text-white"
                             href="shop-single.html"
                           >
-                            <i class="far fa-heart"></i>
+                            <i className="far fa-heart"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="far fa-eye"></i>
+                            <i className="far fa-eye"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="fas fa-cart-plus"></i>
+                            <i className="fas fa-cart-plus"></i>
                           </a>
                         </li>
                       </ul>
                     </div>
                   </div>
-                  <div class="card-body">
-                    <a href="shop-single.html" class="h3 text-decoration-none">
+                  <div className="card-body">
+                    <a href="shop-single.html" className="h3 text-decoration-none">
                       Oupidatat non
                     </a>
-                    <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                    <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
                       <li>M/L/X/XL</li>
                     </ul>
-                    <ul class="list-unstyled d-flex justify-content-center mb-1"></ul>
-                    <p class="text-center mb-0">$250.00</p>
+                    <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
+                    <p className="text-center mb-0">$250.00</p>
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
-                <div class="card mb-4 product-wap rounded-0">
-                  <div class="card rounded-0">
-                    <img class="card-img rounded-0 img-fluid" src={shop2} />
-                    <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
-                      <ul class="list-unstyled">
+              <div className="col-md-3">
+                <div className="card mb-4 product-wap rounded-0">
+                  <div className="card rounded-0">
+                    <img alt=" " className="card-img rounded-0 img-fluid" src={shop2} />
+                    <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                      <ul className="list-unstyled">
                         <li>
                           <a
-                            class="btn btn-success text-white"
+                            className="btn btn-success text-white"
                             href="shop-single.html"
                           >
-                            <i class="far fa-heart"></i>
+                            <i className="far fa-heart"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="far fa-eye"></i>
+                            <i className="far fa-eye"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="fas fa-cart-plus"></i>
+                            <i className="fas fa-cart-plus"></i>
                           </a>
                         </li>
                       </ul>
                     </div>
                   </div>
-                  <div class="card-body">
-                    <a href="shop-single.html" class="h3 text-decoration-none">
+                  <div className="card-body">
+                    <a href="shop-single.html" className="h3 text-decoration-none">
                       Oupidatat non
                     </a>
-                    <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                    <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
                       <li>M/L/X/XL</li>
                     </ul>
-                    <ul class="list-unstyled d-flex justify-content-center mb-1"></ul>
-                    <p class="text-center mb-0">$250.00</p>
+                    <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
+                    <p className="text-center mb-0">$250.00</p>
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
-                <div class="card mb-4 product-wap rounded-0">
-                  <div class="card rounded-0">
-                    <img class="card-img rounded-0 img-fluid" src={shop1} />
-                    <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
-                      <ul class="list-unstyled">
+              <div className="col-md-3">
+                <div className="card mb-4 product-wap rounded-0">
+                  <div className="card rounded-0">
+                    <img alt=" " className="card-img rounded-0 img-fluid" src={shop1} />
+                    <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                      <ul className="list-unstyled">
                         <li>
                           <a
-                            class="btn btn-success text-white"
+                            className="btn btn-success text-white"
                             href="shop-single.html"
                           >
-                            <i class="far fa-heart"></i>
+                            <i className="far fa-heart"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="far fa-eye"></i>
+                            <i className="far fa-eye"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="fas fa-cart-plus"></i>
+                            <i className="fas fa-cart-plus"></i>
                           </a>
                         </li>
                       </ul>
                     </div>
                   </div>
-                  <div class="card-body">
-                    <a href="shop-single.html" class="h3 text-decoration-none">
+                  <div className="card-body">
+                    <a href="shop-single.html" className="h3 text-decoration-none">
                       Oupidatat non
                     </a>
-                    <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                    <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
                       <li>M/L/X/XL</li>
                     </ul>
-                    <ul class="list-unstyled d-flex justify-content-center mb-1"></ul>
-                    <p class="text-center mb-0">$250.00</p>
+                    <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
+                    <p className="text-center mb-0">$250.00</p>
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
-                <div class="card mb-4 product-wap rounded-0">
-                  <div class="card rounded-0">
-                    <img class="card-img rounded-0 img-fluid" src={shop2} />
-                    <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
-                      <ul class="list-unstyled">
+              <div className="col-md-3">
+                <div className="card mb-4 product-wap rounded-0">
+                  <div className="card rounded-0">
+                    <img alt=" " className="card-img rounded-0 img-fluid" src={shop2} />
+                    <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                      <ul className="list-unstyled">
                         <li>
                           <a
-                            class="btn btn-success text-white"
+                            className="btn btn-success text-white"
                             href="shop-single.html"
                           >
-                            <i class="far fa-heart"></i>
+                            <i className="far fa-heart"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="far fa-eye"></i>
+                            <i className="far fa-eye"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="fas fa-cart-plus"></i>
+                            <i className="fas fa-cart-plus"></i>
                           </a>
                         </li>
                       </ul>
                     </div>
                   </div>
-                  <div class="card-body">
-                    <a href="shop-single.html" class="h3 text-decoration-none">
+                  <div className="card-body">
+                    <a href="shop-single.html" className="h3 text-decoration-none">
                       Oupidatat non
                     </a>
-                    <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                    <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
                       <li>M/L/X/XL</li>
                     </ul>
-                    <ul class="list-unstyled d-flex justify-content-center mb-1"></ul>
-                    <p class="text-center mb-0">$250.00</p>
+                    <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
+                    <p className="text-center mb-0">$250.00</p>
                   </div>
                 </div>
               </div>
@@ -771,183 +771,183 @@ const Shop = () => {
             {/* cctv */}
             <div className="row" id="cctv">
               <h1 className="py-3 pb-4  text-center">CCTV</h1>
-              <div class="col-md-3">
-                <div class="card mb-4 product-wap rounded-0">
-                  <div class="card rounded-0">
-                    <img class="card-img rounded-0 img-fluid" src={shop1} />
-                    <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
-                      <ul class="list-unstyled">
+              <div className="col-md-3">
+                <div className="card mb-4 product-wap rounded-0">
+                  <div className="card rounded-0">
+                    <img alt=" " className="card-img rounded-0 img-fluid" src={shop1} />
+                    <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                      <ul className="list-unstyled">
                         <li>
                           <a
-                            class="btn btn-success text-white"
+                            className="btn btn-success text-white"
                             href="shop-single.html"
                           >
-                            <i class="far fa-heart"></i>
+                            <i className="far fa-heart"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="far fa-eye"></i>
+                            <i className="far fa-eye"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="fas fa-cart-plus"></i>
+                            <i className="fas fa-cart-plus"></i>
                           </a>
                         </li>
                       </ul>
                     </div>
                   </div>
-                  <div class="card-body">
-                    <a href="shop-single.html" class="h3 text-decoration-none">
+                  <div className="card-body">
+                    <a href="shop-single.html" className="h3 text-decoration-none">
                       Oupidatat non
                     </a>
-                    <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                    <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
                       <li>M/L/X/XL</li>
                     </ul>
-                    <ul class="list-unstyled d-flex justify-content-center mb-1"></ul>
-                    <p class="text-center mb-0">$250.00</p>
+                    <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
+                    <p className="text-center mb-0">$250.00</p>
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
-                <div class="card mb-4 product-wap rounded-0">
-                  <div class="card rounded-0">
-                    <img class="card-img rounded-0 img-fluid" src={shop2} />
-                    <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
-                      <ul class="list-unstyled">
+              <div className="col-md-3">
+                <div className="card mb-4 product-wap rounded-0">
+                  <div className="card rounded-0">
+                    <img alt=" " className="card-img rounded-0 img-fluid" src={shop2} />
+                    <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                      <ul className="list-unstyled">
                         <li>
                           <a
-                            class="btn btn-success text-white"
+                            className="btn btn-success text-white"
                             href="shop-single.html"
                           >
-                            <i class="far fa-heart"></i>
+                            <i className="far fa-heart"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="far fa-eye"></i>
+                            <i className="far fa-eye"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="fas fa-cart-plus"></i>
+                            <i className="fas fa-cart-plus"></i>
                           </a>
                         </li>
                       </ul>
                     </div>
                   </div>
-                  <div class="card-body">
-                    <a href="shop-single.html" class="h3 text-decoration-none">
+                  <div className="card-body">
+                    <a href="shop-single.html" className="h3 text-decoration-none">
                       Oupidatat non
                     </a>
-                    <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                    <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
                       <li>M/L/X/XL</li>
                     </ul>
-                    <ul class="list-unstyled d-flex justify-content-center mb-1"></ul>
-                    <p class="text-center mb-0">$250.00</p>
+                    <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
+                    <p className="text-center mb-0">$250.00</p>
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
-                <div class="card mb-4 product-wap rounded-0">
-                  <div class="card rounded-0">
-                    <img class="card-img rounded-0 img-fluid" src={shop1} />
-                    <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
-                      <ul class="list-unstyled">
+              <div className="col-md-3">
+                <div className="card mb-4 product-wap rounded-0">
+                  <div className="card rounded-0">
+                    <img alt=" " className="card-img rounded-0 img-fluid" src={shop1} />
+                    <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                      <ul className="list-unstyled">
                         <li>
                           <a
-                            class="btn btn-success text-white"
+                            className="btn btn-success text-white"
                             href="shop-single.html"
                           >
-                            <i class="far fa-heart"></i>
+                            <i className="far fa-heart"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="far fa-eye"></i>
+                            <i className="far fa-eye"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="fas fa-cart-plus"></i>
+                            <i className="fas fa-cart-plus"></i>
                           </a>
                         </li>
                       </ul>
                     </div>
                   </div>
-                  <div class="card-body">
-                    <a href="shop-single.html" class="h3 text-decoration-none">
+                  <div className="card-body">
+                    <a href="shop-single.html" className="h3 text-decoration-none">
                       Oupidatat non
                     </a>
-                    <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                    <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
                       <li>M/L/X/XL</li>
                     </ul>
-                    <ul class="list-unstyled d-flex justify-content-center mb-1"></ul>
-                    <p class="text-center mb-0">$250.00</p>
+                    <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
+                    <p className="text-center mb-0">$250.00</p>
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
-                <div class="card mb-4 product-wap rounded-0">
-                  <div class="card rounded-0">
-                    <img class="card-img rounded-0 img-fluid" src={shop2} />
-                    <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
-                      <ul class="list-unstyled">
+              <div className="col-md-3">
+                <div className="card mb-4 product-wap rounded-0">
+                  <div className="card rounded-0">
+                    <img alt=" " className="card-img rounded-0 img-fluid" src={shop2} />
+                    <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                      <ul className="list-unstyled">
                         <li>
                           <a
-                            class="btn btn-success text-white"
+                            className="btn btn-success text-white"
                             href="shop-single.html"
                           >
-                            <i class="far fa-heart"></i>
+                            <i className="far fa-heart"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="far fa-eye"></i>
+                            <i className="far fa-eye"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="fas fa-cart-plus"></i>
+                            <i className="fas fa-cart-plus"></i>
                           </a>
                         </li>
                       </ul>
                     </div>
                   </div>
-                  <div class="card-body">
-                    <a href="shop-single.html" class="h3 text-decoration-none">
+                  <div className="card-body">
+                    <a href="shop-single.html" className="h3 text-decoration-none">
                       Oupidatat non
                     </a>
-                    <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                    <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
                       <li>M/L/X/XL</li>
                     </ul>
-                    <ul class="list-unstyled d-flex justify-content-center mb-1"></ul>
-                    <p class="text-center mb-0">$250.00</p>
+                    <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
+                    <p className="text-center mb-0">$250.00</p>
                   </div>
                 </div>
               </div>
@@ -964,183 +964,183 @@ const Shop = () => {
             {/* EPABX */}
             <div className="row" id="epabx">
               <h1 className="py-3 pb-4  text-center">EPABX</h1>
-              <div class="col-md-3">
-                <div class="card mb-4 product-wap rounded-0">
-                  <div class="card rounded-0">
-                    <img class="card-img rounded-0 img-fluid" src={shop1} />
-                    <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
-                      <ul class="list-unstyled">
+              <div className="col-md-3">
+                <div className="card mb-4 product-wap rounded-0">
+                  <div className="card rounded-0">
+                    <img alt=" " className="card-img rounded-0 img-fluid" src={shop1} />
+                    <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                      <ul className="list-unstyled">
                         <li>
                           <a
-                            class="btn btn-success text-white"
+                            className="btn btn-success text-white"
                             href="shop-single.html"
                           >
-                            <i class="far fa-heart"></i>
+                            <i className="far fa-heart"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="far fa-eye"></i>
+                            <i className="far fa-eye"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="fas fa-cart-plus"></i>
+                            <i className="fas fa-cart-plus"></i>
                           </a>
                         </li>
                       </ul>
                     </div>
                   </div>
-                  <div class="card-body">
-                    <a href="shop-single.html" class="h3 text-decoration-none">
+                  <div className="card-body">
+                    <a href="shop-single.html" className="h3 text-decoration-none">
                       Oupidatat non
                     </a>
-                    <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                    <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
                       <li>M/L/X/XL</li>
                     </ul>
-                    <ul class="list-unstyled d-flex justify-content-center mb-1"></ul>
-                    <p class="text-center mb-0">$250.00</p>
+                    <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
+                    <p className="text-center mb-0">$250.00</p>
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
-                <div class="card mb-4 product-wap rounded-0">
-                  <div class="card rounded-0">
-                    <img class="card-img rounded-0 img-fluid" src={shop2} />
-                    <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
-                      <ul class="list-unstyled">
+              <div className="col-md-3">
+                <div className="card mb-4 product-wap rounded-0">
+                  <div className="card rounded-0">
+                    <img alt=" " className="card-img rounded-0 img-fluid" src={shop2} />
+                    <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                      <ul className="list-unstyled">
                         <li>
                           <a
-                            class="btn btn-success text-white"
+                            className="btn btn-success text-white"
                             href="shop-single.html"
                           >
-                            <i class="far fa-heart"></i>
+                            <i className="far fa-heart"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="far fa-eye"></i>
+                            <i className="far fa-eye"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="fas fa-cart-plus"></i>
+                            <i className="fas fa-cart-plus"></i>
                           </a>
                         </li>
                       </ul>
                     </div>
                   </div>
-                  <div class="card-body">
-                    <a href="shop-single.html" class="h3 text-decoration-none">
+                  <div className="card-body">
+                    <a href="shop-single.html" className="h3 text-decoration-none">
                       Oupidatat non
                     </a>
-                    <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                    <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
                       <li>M/L/X/XL</li>
                     </ul>
-                    <ul class="list-unstyled d-flex justify-content-center mb-1"></ul>
-                    <p class="text-center mb-0">$250.00</p>
+                    <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
+                    <p className="text-center mb-0">$250.00</p>
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
-                <div class="card mb-4 product-wap rounded-0">
-                  <div class="card rounded-0">
-                    <img class="card-img rounded-0 img-fluid" src={shop1} />
-                    <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
-                      <ul class="list-unstyled">
+              <div className="col-md-3">
+                <div className="card mb-4 product-wap rounded-0">
+                  <div className="card rounded-0">
+                    <img alt=" " className="card-img rounded-0 img-fluid" src={shop1} />
+                    <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                      <ul className="list-unstyled">
                         <li>
                           <a
-                            class="btn btn-success text-white"
+                            className="btn btn-success text-white"
                             href="shop-single.html"
                           >
-                            <i class="far fa-heart"></i>
+                            <i className="far fa-heart"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="far fa-eye"></i>
+                            <i className="far fa-eye"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="fas fa-cart-plus"></i>
+                            <i className="fas fa-cart-plus"></i>
                           </a>
                         </li>
                       </ul>
                     </div>
                   </div>
-                  <div class="card-body">
-                    <a href="shop-single.html" class="h3 text-decoration-none">
+                  <div className="card-body">
+                    <a href="shop-single.html" className="h3 text-decoration-none">
                       Oupidatat non
                     </a>
-                    <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                    <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
                       <li>M/L/X/XL</li>
                     </ul>
-                    <ul class="list-unstyled d-flex justify-content-center mb-1"></ul>
-                    <p class="text-center mb-0">$250.00</p>
+                    <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
+                    <p className="text-center mb-0">$250.00</p>
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
-                <div class="card mb-4 product-wap rounded-0">
-                  <div class="card rounded-0">
-                    <img class="card-img rounded-0 img-fluid" src={shop2} />
-                    <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
-                      <ul class="list-unstyled">
+              <div className="col-md-3">
+                <div className="card mb-4 product-wap rounded-0">
+                  <div className="card rounded-0">
+                    <img alt=" " className="card-img rounded-0 img-fluid" src={shop2} />
+                    <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                      <ul className="list-unstyled">
                         <li>
                           <a
-                            class="btn btn-success text-white"
+                            className="btn btn-success text-white"
                             href="shop-single.html"
                           >
-                            <i class="far fa-heart"></i>
+                            <i className="far fa-heart"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="far fa-eye"></i>
+                            <i className="far fa-eye"></i>
                           </a>
                         </li>
                         <li>
                           <a
-                            class="btn btn-success text-white mt-2"
+                            className="btn btn-success text-white mt-2"
                             href="shop-single.html"
                           >
-                            <i class="fas fa-cart-plus"></i>
+                            <i className="fas fa-cart-plus"></i>
                           </a>
                         </li>
                       </ul>
                     </div>
                   </div>
-                  <div class="card-body">
-                    <a href="shop-single.html" class="h3 text-decoration-none">
+                  <div className="card-body">
+                    <a href="shop-single.html" className="h3 text-decoration-none">
                       Oupidatat non
                     </a>
-                    <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                    <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
                       <li>M/L/X/XL</li>
                     </ul>
-                    <ul class="list-unstyled d-flex justify-content-center mb-1"></ul>
-                    <p class="text-center mb-0">$250.00</p>
+                    <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
+                    <p className="text-center mb-0">$250.00</p>
                   </div>
                 </div>
               </div>
