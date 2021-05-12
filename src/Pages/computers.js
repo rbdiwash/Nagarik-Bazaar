@@ -1,6 +1,7 @@
 import React from "react";
 import shop1 from "../assets/img/computer2.png";
 import shop2 from "../assets/img/computer.png";
+import ComputerCard from "../Components/ComputerCard";
 
 const Computers = () => {
   return (
@@ -9,10 +10,29 @@ const Computers = () => {
         <div className="row" id="computer">
           <h1 className="py-3 pb-4  text-center">Available Computers</h1>
           <hr className="mb-5" />
+          <ComputerCard
+            productName={" Dell Gaming PC"}
+            price={40000}
+            discount={42200}
+            brand={"8GB RAM/500GB HDD"}
+            image={shop1}
+          />
+          <ComputerCard
+            productName={"Telephone"}
+            price={1000}
+            discount={1200}
+            brand={"Sony"}
+            image={shop2}
+          />
+
           <div className="col-md-3">
             <div className="card mb-4 product-wap rounded-0">
               <div className="card rounded-0">
-                <img alt=" " className="card-img rounded-0 img-fluid" src={shop1} />
+                <img
+                  alt=" "
+                  className="card-img rounded-0 img-fluid"
+                  src={shop1}
+                />
                 <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                   <ul className="list-unstyled">
                     <li>
@@ -59,7 +79,11 @@ const Computers = () => {
           <div className="col-md-3">
             <div className="card mb-4 product-wap rounded-0">
               <div className="card rounded-0">
-                <img alt=" " className="card-img rounded-0 img-fluid" src={shop2} />
+                <img
+                  alt=" "
+                  className="card-img rounded-0 img-fluid"
+                  src={shop2}
+                />
                 <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                   <ul className="list-unstyled">
                     <li>
@@ -106,7 +130,11 @@ const Computers = () => {
           <div className="col-md-3">
             <div className="card mb-4 product-wap rounded-0">
               <div className="card rounded-0">
-                <img alt=" " className="card-img rounded-0 img-fluid" src={shop1} />
+                <img
+                  alt=" "
+                  className="card-img rounded-0 img-fluid"
+                  src={shop1}
+                />
                 <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                   <ul className="list-unstyled">
                     <li>
@@ -153,7 +181,11 @@ const Computers = () => {
           <div className="col-md-3">
             <div className="card mb-4 product-wap rounded-0">
               <div className="card rounded-0">
-                <img alt=" " className="card-img rounded-0 img-fluid" src={shop2} />
+                <img
+                  alt=" "
+                  className="card-img rounded-0 img-fluid"
+                  src={shop2}
+                />
                 <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                   <ul className="list-unstyled">
                     <li>

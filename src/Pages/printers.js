@@ -12,7 +12,11 @@ const Printers = () => {
           <div className="col-md-3">
             <div className="card mb-4 product-wap rounded-0">
               <div className="card rounded-0">
-                <img alt=" " className="card-img rounded-0 img-fluid" src={shop1} />
+                <img
+                  alt=" "
+                  className="card-img rounded-0 img-fluid"
+                  src={shop1}
+                />
                 <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                   <ul className="list-unstyled">
                     <li>
@@ -57,7 +61,11 @@ const Printers = () => {
           <div className="col-md-3">
             <div className="card mb-4 product-wap rounded-0">
               <div className="card rounded-0">
-                <img alt=" " className="card-img rounded-0 img-fluid" src={shop2} />
+                <img
+                  alt=" "
+                  className="card-img rounded-0 img-fluid"
+                  src={shop2}
+                />
                 <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                   <ul className="list-unstyled">
                     <li>
@@ -102,7 +110,11 @@ const Printers = () => {
           <div className="col-md-3">
             <div className="card mb-4 product-wap rounded-0">
               <div className="card rounded-0">
-                <img alt=" " className="card-img rounded-0 img-fluid" src={shop1} />
+                <img
+                  alt=" "
+                  className="card-img rounded-0 img-fluid"
+                  src={shop1}
+                />
                 <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                   <ul className="list-unstyled">
                     <li>
@@ -147,7 +159,11 @@ const Printers = () => {
           <div className="col-md-3">
             <div className="card mb-4 product-wap rounded-0">
               <div className="card rounded-0">
-                <img alt=" " className="card-img rounded-0 img-fluid" src={shop2} />
+                <img
+                  alt=" "
+                  className="card-img rounded-0 img-fluid"
+                  src={shop2}
+                />
                 <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                   <ul className="list-unstyled">
                     <li>

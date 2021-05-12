@@ -1,12 +1,7 @@
 import "./App.css";
 import React from "react";
 import "../src/assets/css/templatemo.css";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Homepage from "./Pages/Homepage";
 import About from "./Pages/About";
