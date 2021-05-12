@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import shop2 from "../assets/img/computer.png";
+import Modal from "../Components/Modal";
 
 const SingleProduct = () => {
+  const [openModal, setOpenModal] = useState(false);
   return (
     <>
       <section id="portfolio-details" className="portfolio-details">
@@ -23,16 +25,16 @@ const SingleProduct = () => {
                 <h3>Product Details</h3>
                 <ul>
                   <li>
-                    <strong>Category</strong>: Computer
+                    <i>Category</i> : Computer
                   </li>
                   <li>
-                    <strong>Client</strong>: ASU Company
+                    <i>Client</i>: ASU Company
                   </li>
                   <li>
-                    <strong>Discount</strong>: 100
+                    <i>Discount</i>: 100
                   </li>
                   <li>
-                    <strong>Price</strong>: 10,000
+                    <i>Price</i>: 10,000
                   </li>
                 </ul>
               </div>
@@ -46,6 +48,18 @@ const SingleProduct = () => {
                   tempora consectetur dignissimos. Sequi nulla at esse enim cum
                   deserunt eius.
                 </p>
+                <button
+                  type="button"
+                  className="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                  onClick={() => {
+                    setOpenModal(true);
+                  }}
+                >
+                  Add to Cart
+                </button>
+                {openModal ? <Modal dataTarget={"exampleModal"} /> : null}
               </div>
             </div>
           </div>

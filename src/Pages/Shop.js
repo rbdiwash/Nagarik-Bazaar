@@ -4,6 +4,7 @@ import shop2 from "../assets/img/computer.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Link } from "react-router-dom";
+import ComputerCard from "../Components/ComputerCard";
 
 const Shop = () => {
   const responsive = {
@@ -32,10 +33,13 @@ const Shop = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="row">
-              <div className="col-md-6">
+              <div className="col-md-12">
                 <ul className="list-inline shop-top-menu pb-3 pt-1">
                   <li className="list-inline-item">
-                    <a className="h3 text-dark text-decoration-none mr-3" href="#">
+                    <a
+                      className="h3 text-dark text-decoration-none mr-3"
+                      href="#"
+                    >
                       All Categories
                     </a>
                   </li>
@@ -56,27 +60,23 @@ const Shop = () => {
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a className="h3 text-dark text-decoration-none" href="#cctv">
+                    <a
+                      className="h3 text-dark text-decoration-none"
+                      href="#cctv"
+                    >
                       -CCTV
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a className="h3 text-dark text-decoration-none" href="#epabx">
+                    <a
+                      className="h3 text-dark text-decoration-none"
+                      href="#epabx"
+                    >
                       -EPABX
                     </a>
                   </li>
                 </ul>
               </div>
-
-              {/* <div className="col-md-6 pb-4">
-                <div className="d-flex">
-                  <select className="form-control">
-                    <option>Featured</option>
-                    <option>A to Z</option>
-                    <option>Item</option>
-                  </select>
-                </div>
-              </div> */}
             </div>
             <div className="row">
               <Carousel
@@ -86,10 +86,14 @@ const Shop = () => {
                 responsive={responsive}
                 keyBoardControl={true}
               >
-                <div className="col-md-10">
+                <div className="col-md-11">
                   <div className="card mb-4 product-wap rounded-0">
                     <div className="card rounded-0">
-                      <img alt=" " className="card-img rounded-0 img-fluid" src={shop1} />
+                      <img
+                        alt=" "
+                        className="card-img rounded-0 img-fluid"
+                        src={shop1}
+                      />
                       <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                         <ul className="list-unstyled">
                           <li>
@@ -124,20 +128,26 @@ const Shop = () => {
                         href="shop-single.html"
                         className="h3 text-decoration-none"
                       >
-                        Oupidatat non
+                        Dell Gaming PC
                       </a>
                       <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
-                        <li>M/L/X/XL</li>
+                        <li>8GB RAM/500GB HDD</li>
                       </ul>
                       <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
-                      <p className="text-center mb-0">$250.00</p>
+                      <p className="mb-0">
+                        <strike>Rs. 54,000</strike> Rs. 50,000
+                      </p>
                     </div>
                   </div>
                 </div>
-                <div className="col-md-10">
+                <div className="col-md-11">
                   <div className="card mb-4 product-wap rounded-0">
                     <div className="card rounded-0">
-                      <img alt=" " className="card-img rounded-0 img-fluid" src={shop2} />
+                      <img
+                        alt=" "
+                        className="card-img rounded-0 img-fluid"
+                        src={shop2}
+                      />
                       <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                         <ul className="list-unstyled">
                           <li>
@@ -172,20 +182,26 @@ const Shop = () => {
                         href="shop-single.html"
                         className="h3 text-decoration-none"
                       >
-                        Oupidatat non
+                        Dell PC
                       </a>
                       <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
-                        <li>M/L/X/XL</li>
+                        <li>8GB RAM/500GB HDD</li>
                       </ul>
                       <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
-                      <p className="text-center mb-0">$250.00</p>
+                      <p className="mb-0">
+                        <strike>Rs. 46,000</strike> Rs. 42,000
+                      </p>
                     </div>
                   </div>
                 </div>
-                <div className="col-md-10">
+                <div className="col-md-11">
                   <div className="card mb-4 product-wap rounded-0">
                     <div className="card rounded-0">
-                      <img alt=" " className="card-img rounded-0 img-fluid" src={shop1} />
+                      <img
+                        alt=" "
+                        className="card-img rounded-0 img-fluid"
+                        src={shop1}
+                      />
                       <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                         <ul className="list-unstyled">
                           <li>
@@ -220,20 +236,26 @@ const Shop = () => {
                         href="shop-single.html"
                         className="h3 text-decoration-none"
                       >
-                        Oupidatat non
+                        Dell Gaming PC
                       </a>
                       <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
-                        <li>M/L/X/XL</li>
+                        <li>8GB RAM/500GB HDD</li>
                       </ul>
                       <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
-                      <p className="text-center mb-0">$250.00</p>
+                      <p className="mb-0">
+                        <strike>Rs. 54,000</strike> Rs. 50,000
+                      </p>
                     </div>
                   </div>
                 </div>
-                <div className="col-md-10">
+                <div className="col-md-11">
                   <div className="card mb-4 product-wap rounded-0">
                     <div className="card rounded-0">
-                      <img alt=" " className="card-img rounded-0 img-fluid" src={shop2} />
+                      <img
+                        alt=" "
+                        className="card-img rounded-0 img-fluid"
+                        src={shop2}
+                      />
                       <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                         <ul className="list-unstyled">
                           <li>
@@ -268,20 +290,26 @@ const Shop = () => {
                         href="shop-single.html"
                         className="h3 text-decoration-none"
                       >
-                        Oupidatat non
+                        Dell PC
                       </a>
                       <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
-                        <li>M/L/X/XL</li>
+                        <li>8GB RAM/500GB HDD</li>
                       </ul>
                       <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
-                      <p className="text-center mb-0">$250.00</p>
+                      <p className="mb-0">
+                        <strike>Rs. 46,000</strike> Rs. 42,000
+                      </p>
                     </div>
                   </div>
                 </div>
-                <div className="col-md-10">
+                <div className="col-md-11">
                   <div className="card mb-4 product-wap rounded-0">
                     <div className="card rounded-0">
-                      <img alt=" " className="card-img rounded-0 img-fluid" src={shop1} />
+                      <img
+                        alt=" "
+                        className="card-img rounded-0 img-fluid"
+                        src={shop1}
+                      />
                       <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                         <ul className="list-unstyled">
                           <li>
@@ -316,20 +344,26 @@ const Shop = () => {
                         href="shop-single.html"
                         className="h3 text-decoration-none"
                       >
-                        Oupidatat non
+                        Dell Gaming PC
                       </a>
                       <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
-                        <li>M/L/X/XL</li>
+                        <li>8GB RAM/500GB HDD</li>
                       </ul>
                       <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
-                      <p className="text-center mb-0">$250.00</p>
+                      <p className="mb-0">
+                        <strike>Rs. 54,000</strike> Rs. 50,000
+                      </p>
                     </div>
                   </div>
                 </div>
-                <div className="col-md-10">
+                <div className="col-md-11">
                   <div className="card mb-4 product-wap rounded-0">
                     <div className="card rounded-0">
-                      <img alt=" " className="card-img rounded-0 img-fluid" src={shop2} />
+                      <img
+                        alt=" "
+                        className="card-img rounded-0 img-fluid"
+                        src={shop2}
+                      />
                       <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                         <ul className="list-unstyled">
                           <li>
@@ -364,13 +398,123 @@ const Shop = () => {
                         href="shop-single.html"
                         className="h3 text-decoration-none"
                       >
-                        Oupidatat non
+                        Dell PC
                       </a>
                       <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
-                        <li>M/L/X/XL</li>
+                        <li>8GB RAM/500GB HDD</li>
                       </ul>
                       <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
-                      <p className="text-center mb-0">$250.00</p>
+                      <p className="mb-0">
+                        <strike>Rs. 46,000</strike> Rs. 42,000
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-11">
+                  <div className="card mb-4 product-wap rounded-0">
+                    <div className="card rounded-0">
+                      <img
+                        alt=" "
+                        className="card-img rounded-0 img-fluid"
+                        src={shop1}
+                      />
+                      <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                        <ul className="list-unstyled">
+                          <li>
+                            <a
+                              className="btn btn-success text-white"
+                              href="shop-single.html"
+                            >
+                              <i className="far fa-heart"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className="btn btn-success text-white mt-2"
+                              href="shop-single.html"
+                            >
+                              <i className="far fa-eye"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className="btn btn-success text-white mt-2"
+                              href="shop-single.html"
+                            >
+                              <i className="fas fa-cart-plus"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="card-body">
+                      <a
+                        href="shop-single.html"
+                        className="h3 text-decoration-none"
+                      >
+                        Dell Gaming PC
+                      </a>
+                      <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
+                        <li>8GB RAM/500GB HDD</li>
+                      </ul>
+                      <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
+                      <p className="mb-0">
+                        <strike>Rs. 54,000</strike> Rs. 50,000
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-11">
+                  <div className="card mb-4 product-wap rounded-0">
+                    <div className="card rounded-0">
+                      <img
+                        alt=" "
+                        className="card-img rounded-0 img-fluid"
+                        src={shop2}
+                      />
+                      <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+                        <ul className="list-unstyled">
+                          <li>
+                            <a
+                              className="btn btn-success text-white"
+                              href="shop-single.html"
+                            >
+                              <i className="far fa-heart"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className="btn btn-success text-white mt-2"
+                              href="shop-single.html"
+                            >
+                              <i className="far fa-eye"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              className="btn btn-success text-white mt-2"
+                              href="shop-single.html"
+                            >
+                              <i className="fas fa-cart-plus"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="card-body">
+                      <a
+                        href="shop-single.html"
+                        className="h3 text-decoration-none"
+                      >
+                        Dell PC
+                      </a>
+                      <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
+                        <li>8GB RAM/500GB HDD</li>
+                      </ul>
+                      <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
+                      <p className="mb-0">
+                        <strike>Rs. 46,000</strike> Rs. 42,000
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -383,7 +527,11 @@ const Shop = () => {
               <div className="col-md-3">
                 <div className="card mb-4 product-wap rounded-0">
                   <div className="card rounded-0">
-                    <img alt=" " className="card-img rounded-0 img-fluid" src={shop1} />
+                    <img
+                      alt=" "
+                      className="card-img rounded-0 img-fluid"
+                      src={shop1}
+                    />
                     <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                       <ul className="list-unstyled">
                         <li>
@@ -414,7 +562,10 @@ const Shop = () => {
                     </div>
                   </div>
                   <div className="card-body">
-                    <a href="shop-single.html" className="h3 text-decoration-none">
+                    <a
+                      href="shop-single.html"
+                      className="h3 text-decoration-none"
+                    >
                       Dell Gaming PC
                     </a>
                     <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
@@ -430,7 +581,11 @@ const Shop = () => {
               <div className="col-md-3">
                 <div className="card mb-4 product-wap rounded-0">
                   <div className="card rounded-0">
-                    <img alt=" " className="card-img rounded-0 img-fluid" src={shop2} />
+                    <img
+                      alt=" "
+                      className="card-img rounded-0 img-fluid"
+                      src={shop2}
+                    />
                     <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                       <ul className="list-unstyled">
                         <li>
@@ -461,7 +616,10 @@ const Shop = () => {
                     </div>
                   </div>
                   <div className="card-body">
-                    <a href="shop-single.html" className="h3 text-decoration-none">
+                    <a
+                      href="shop-single.html"
+                      className="h3 text-decoration-none"
+                    >
                       Dell PC
                     </a>
                     <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
@@ -477,7 +635,11 @@ const Shop = () => {
               <div className="col-md-3">
                 <div className="card mb-4 product-wap rounded-0">
                   <div className="card rounded-0">
-                    <img alt=" " className="card-img rounded-0 img-fluid" src={shop1} />
+                    <img
+                      alt=" "
+                      className="card-img rounded-0 img-fluid"
+                      src={shop1}
+                    />
                     <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                       <ul className="list-unstyled">
                         <li>
@@ -508,7 +670,10 @@ const Shop = () => {
                     </div>
                   </div>
                   <div className="card-body">
-                    <a href="shop-single.html" className="h3 text-decoration-none">
+                    <a
+                      href="shop-single.html"
+                      className="h3 text-decoration-none"
+                    >
                       Oupidatat non
                     </a>
                     <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
@@ -522,7 +687,11 @@ const Shop = () => {
               <div className="col-md-3">
                 <div className="card mb-4 product-wap rounded-0">
                   <div className="card rounded-0">
-                    <img alt=" " className="card-img rounded-0 img-fluid" src={shop2} />
+                    <img
+                      alt=" "
+                      className="card-img rounded-0 img-fluid"
+                      src={shop2}
+                    />
                     <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                       <ul className="list-unstyled">
                         <li>
@@ -553,7 +722,10 @@ const Shop = () => {
                     </div>
                   </div>
                   <div className="card-body">
-                    <a href="shop-single.html" className="h3 text-decoration-none">
+                    <a
+                      href="shop-single.html"
+                      className="h3 text-decoration-none"
+                    >
                       Oupidatat non
                     </a>
                     <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
@@ -581,7 +753,11 @@ const Shop = () => {
               <div className="col-md-3">
                 <div className="card mb-4 product-wap rounded-0">
                   <div className="card rounded-0">
-                    <img alt=" " className="card-img rounded-0 img-fluid" src={shop1} />
+                    <img
+                      alt=" "
+                      className="card-img rounded-0 img-fluid"
+                      src={shop1}
+                    />
                     <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                       <ul className="list-unstyled">
                         <li>
@@ -612,7 +788,10 @@ const Shop = () => {
                     </div>
                   </div>
                   <div className="card-body">
-                    <a href="shop-single.html" className="h3 text-decoration-none">
+                    <a
+                      href="shop-single.html"
+                      className="h3 text-decoration-none"
+                    >
                       Oupidatat non
                     </a>
                     <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
@@ -626,7 +805,11 @@ const Shop = () => {
               <div className="col-md-3">
                 <div className="card mb-4 product-wap rounded-0">
                   <div className="card rounded-0">
-                    <img alt=" " className="card-img rounded-0 img-fluid" src={shop2} />
+                    <img
+                      alt=" "
+                      className="card-img rounded-0 img-fluid"
+                      src={shop2}
+                    />
                     <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                       <ul className="list-unstyled">
                         <li>
@@ -657,7 +840,10 @@ const Shop = () => {
                     </div>
                   </div>
                   <div className="card-body">
-                    <a href="shop-single.html" className="h3 text-decoration-none">
+                    <a
+                      href="shop-single.html"
+                      className="h3 text-decoration-none"
+                    >
                       Oupidatat non
                     </a>
                     <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
@@ -671,7 +857,11 @@ const Shop = () => {
               <div className="col-md-3">
                 <div className="card mb-4 product-wap rounded-0">
                   <div className="card rounded-0">
-                    <img alt=" " className="card-img rounded-0 img-fluid" src={shop1} />
+                    <img
+                      alt=" "
+                      className="card-img rounded-0 img-fluid"
+                      src={shop1}
+                    />
                     <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                       <ul className="list-unstyled">
                         <li>
@@ -702,7 +892,10 @@ const Shop = () => {
                     </div>
                   </div>
                   <div className="card-body">
-                    <a href="shop-single.html" className="h3 text-decoration-none">
+                    <a
+                      href="shop-single.html"
+                      className="h3 text-decoration-none"
+                    >
                       Oupidatat non
                     </a>
                     <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
@@ -716,7 +909,11 @@ const Shop = () => {
               <div className="col-md-3">
                 <div className="card mb-4 product-wap rounded-0">
                   <div className="card rounded-0">
-                    <img alt=" " className="card-img rounded-0 img-fluid" src={shop2} />
+                    <img
+                      alt=" "
+                      className="card-img rounded-0 img-fluid"
+                      src={shop2}
+                    />
                     <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                       <ul className="list-unstyled">
                         <li>
@@ -747,7 +944,10 @@ const Shop = () => {
                     </div>
                   </div>
                   <div className="card-body">
-                    <a href="shop-single.html" className="h3 text-decoration-none">
+                    <a
+                      href="shop-single.html"
+                      className="h3 text-decoration-none"
+                    >
                       Oupidatat non
                     </a>
                     <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
@@ -774,7 +974,11 @@ const Shop = () => {
               <div className="col-md-3">
                 <div className="card mb-4 product-wap rounded-0">
                   <div className="card rounded-0">
-                    <img alt=" " className="card-img rounded-0 img-fluid" src={shop1} />
+                    <img
+                      alt=" "
+                      className="card-img rounded-0 img-fluid"
+                      src={shop1}
+                    />
                     <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                       <ul className="list-unstyled">
                         <li>
@@ -805,7 +1009,10 @@ const Shop = () => {
                     </div>
                   </div>
                   <div className="card-body">
-                    <a href="shop-single.html" className="h3 text-decoration-none">
+                    <a
+                      href="shop-single.html"
+                      className="h3 text-decoration-none"
+                    >
                       Oupidatat non
                     </a>
                     <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
@@ -819,7 +1026,11 @@ const Shop = () => {
               <div className="col-md-3">
                 <div className="card mb-4 product-wap rounded-0">
                   <div className="card rounded-0">
-                    <img alt=" " className="card-img rounded-0 img-fluid" src={shop2} />
+                    <img
+                      alt=" "
+                      className="card-img rounded-0 img-fluid"
+                      src={shop2}
+                    />
                     <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                       <ul className="list-unstyled">
                         <li>
@@ -850,7 +1061,10 @@ const Shop = () => {
                     </div>
                   </div>
                   <div className="card-body">
-                    <a href="shop-single.html" className="h3 text-decoration-none">
+                    <a
+                      href="shop-single.html"
+                      className="h3 text-decoration-none"
+                    >
                       Oupidatat non
                     </a>
                     <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
@@ -864,7 +1078,11 @@ const Shop = () => {
               <div className="col-md-3">
                 <div className="card mb-4 product-wap rounded-0">
                   <div className="card rounded-0">
-                    <img alt=" " className="card-img rounded-0 img-fluid" src={shop1} />
+                    <img
+                      alt=" "
+                      className="card-img rounded-0 img-fluid"
+                      src={shop1}
+                    />
                     <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                       <ul className="list-unstyled">
                         <li>
@@ -895,7 +1113,10 @@ const Shop = () => {
                     </div>
                   </div>
                   <div className="card-body">
-                    <a href="shop-single.html" className="h3 text-decoration-none">
+                    <a
+                      href="shop-single.html"
+                      className="h3 text-decoration-none"
+                    >
                       Oupidatat non
                     </a>
                     <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
@@ -909,7 +1130,11 @@ const Shop = () => {
               <div className="col-md-3">
                 <div className="card mb-4 product-wap rounded-0">
                   <div className="card rounded-0">
-                    <img alt=" " className="card-img rounded-0 img-fluid" src={shop2} />
+                    <img
+                      alt=" "
+                      className="card-img rounded-0 img-fluid"
+                      src={shop2}
+                    />
                     <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                       <ul className="list-unstyled">
                         <li>
@@ -940,7 +1165,10 @@ const Shop = () => {
                     </div>
                   </div>
                   <div className="card-body">
-                    <a href="shop-single.html" className="h3 text-decoration-none">
+                    <a
+                      href="shop-single.html"
+                      className="h3 text-decoration-none"
+                    >
                       Oupidatat non
                     </a>
                     <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
@@ -967,7 +1195,11 @@ const Shop = () => {
               <div className="col-md-3">
                 <div className="card mb-4 product-wap rounded-0">
                   <div className="card rounded-0">
-                    <img alt=" " className="card-img rounded-0 img-fluid" src={shop1} />
+                    <img
+                      alt=" "
+                      className="card-img rounded-0 img-fluid"
+                      src={shop1}
+                    />
                     <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                       <ul className="list-unstyled">
                         <li>
@@ -998,7 +1230,10 @@ const Shop = () => {
                     </div>
                   </div>
                   <div className="card-body">
-                    <a href="shop-single.html" className="h3 text-decoration-none">
+                    <a
+                      href="shop-single.html"
+                      className="h3 text-decoration-none"
+                    >
                       Oupidatat non
                     </a>
                     <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
@@ -1012,7 +1247,11 @@ const Shop = () => {
               <div className="col-md-3">
                 <div className="card mb-4 product-wap rounded-0">
                   <div className="card rounded-0">
-                    <img alt="this is text" className="card-img rounded-0 img-fluid" src={shop2} />
+                    <img
+                      alt="this is text"
+                      className="card-img rounded-0 img-fluid"
+                      src={shop2}
+                    />
                     <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                       <ul className="list-unstyled">
                         <li>
@@ -1043,7 +1282,10 @@ const Shop = () => {
                     </div>
                   </div>
                   <div className="card-body">
-                    <a href="shop-single.html" className="h3 text-decoration-none">
+                    <a
+                      href="shop-single.html"
+                      className="h3 text-decoration-none"
+                    >
                       Oupidatat non
                     </a>
                     <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
@@ -1057,7 +1299,11 @@ const Shop = () => {
               <div className="col-md-3">
                 <div className="card mb-4 product-wap rounded-0">
                   <div className="card rounded-0">
-                    <img alt=" " className="card-img rounded-0 img-fluid" src={shop1} />
+                    <img
+                      alt=" "
+                      className="card-img rounded-0 img-fluid"
+                      src={shop1}
+                    />
                     <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                       <ul className="list-unstyled">
                         <li>
@@ -1088,7 +1334,10 @@ const Shop = () => {
                     </div>
                   </div>
                   <div className="card-body">
-                    <a href="shop-single.html" className="h3 text-decoration-none">
+                    <a
+                      href="shop-single.html"
+                      className="h3 text-decoration-none"
+                    >
                       Oupidatat non
                     </a>
                     <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
@@ -1102,7 +1351,11 @@ const Shop = () => {
               <div className="col-md-3">
                 <div className="card mb-4 product-wap rounded-0">
                   <div className="card rounded-0">
-                    <img alt=" " className="card-img rounded-0 img-fluid" src={shop2} />
+                    <img
+                      alt=" "
+                      className="card-img rounded-0 img-fluid"
+                      src={shop2}
+                    />
                     <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                       <ul className="list-unstyled">
                         <li>
@@ -1133,7 +1386,10 @@ const Shop = () => {
                     </div>
                   </div>
                   <div className="card-body">
-                    <a href="shop-single.html" className="h3 text-decoration-none">
+                    <a
+                      href="shop-single.html"
+                      className="h3 text-decoration-none"
+                    >
                       Oupidatat non
                     </a>
                     <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
