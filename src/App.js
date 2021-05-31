@@ -14,6 +14,7 @@ import Printers from "./Pages/CCTV";
 import CCTV from "./Pages/printers";
 import EPABX from "./Pages/EPABX";
 import ScrollToTop from "./Components/ScrollToTop";
+import Login from "./Pages/Login";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route exact path="/shop/cctv" component={CCTV}></Route>
           <Route exact path="/shop/printers" component={Printers}></Route>
           <Route exact path="/shop/epabx" component={EPABX}></Route>
+          <Route exact path="/login" component={Login}></Route>
         </Switch>
         <Footer />
       </Router>

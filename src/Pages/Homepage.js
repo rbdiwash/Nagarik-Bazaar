@@ -54,7 +54,7 @@ const Homepage = () => {
                 </div>
                 <div className="col-lg-6 mb-0 d-flex align-items-center">
                   <div className="text-align-left align-self-center">
-                    <h1 className="h1">
+                    <h1 className="display-5">
                       <b>CCTV Camera's</b>
                     </h1>
                     <h3 className="h2">
@@ -77,7 +77,7 @@ const Homepage = () => {
                 </div>
                 <div className="col-lg-6 mb-0 d-flex align-items-center">
                   <div className="text-align-left">
-                    <h1 className="h1 text-primary">
+                    <h1 className="display-5 text-primary">
                       {" "}
                       <b> Computer and Accessories </b>
                     </h1>
@@ -102,7 +102,7 @@ const Homepage = () => {
                 </div>
                 <div className="col-lg-6 mb-0 d-flex align-items-center">
                   <div className="text-align-left">
-                    <h1 className="h1 text-primary">
+                    <h1 className="display-5 text-primary">
                       <b> Repairing and Maintenance</b>
                     </h1>
                     <h3 className="h2">
@@ -325,42 +325,66 @@ const Homepage = () => {
 
             <div className="col-lg-6 mt-5 mt-lg-0 d-flex">
               <div className="row align-self-center gy-4">
-                <div className="col-md-6" data-aos="zoom-out" data-aos-delay="200">
+                <div
+                  className="col-md-6"
+                  data-aos="zoom-out"
+                  data-aos-delay="200"
+                >
                   <div className="feature-box d-flex align-items-center">
                     <i className="fa fa-check"></i>
                     <h3>Eos aspernatur rem</h3>
                   </div>
                 </div>
 
-                <div className="col-md-6" data-aos="zoom-out" data-aos-delay="300">
+                <div
+                  className="col-md-6"
+                  data-aos="zoom-out"
+                  data-aos-delay="300"
+                >
                   <div className="feature-box d-flex align-items-center">
                     <i className="fa fa-check"></i>
                     <h3>Facilis neque ipsa</h3>
                   </div>
                 </div>
 
-                <div className="col-md-6" data-aos="zoom-out" data-aos-delay="400">
+                <div
+                  className="col-md-6"
+                  data-aos="zoom-out"
+                  data-aos-delay="400"
+                >
                   <div className="feature-box d-flex align-items-center">
                     <i className="fa fa-check"></i>
                     <h3>Volup amet voluptas</h3>
                   </div>
                 </div>
 
-                <div className="col-md-6" data-aos="zoom-out" data-aos-delay="500">
+                <div
+                  className="col-md-6"
+                  data-aos="zoom-out"
+                  data-aos-delay="500"
+                >
                   <div className="feature-box d-flex align-items-center">
                     <i className="fa fa-check"></i>
                     <h3>Rerum omnis sint</h3>
                   </div>
                 </div>
 
-                <div className="col-md-6" data-aos="zoom-out" data-aos-delay="600">
+                <div
+                  className="col-md-6"
+                  data-aos="zoom-out"
+                  data-aos-delay="600"
+                >
                   <div className="feature-box d-flex align-items-center">
                     <i className="fa fa-check"></i>
                     <h3>Alias possimus</h3>
                   </div>
                 </div>
 
-                <div className="col-md-6" data-aos="zoom-out" data-aos-delay="700">
+                <div
+                  className="col-md-6"
+                  data-aos="zoom-out"
+                  data-aos-delay="700"
+                >
                   <div className="feature-box d-flex align-items-center">
                     <i className="fa fa-check"></i>
                     <h3>Repellendus mollitia</h3>
@@ -388,7 +412,11 @@ const Homepage = () => {
         <div className="row">
           <div className="col-12 col-md-4 p-5 mt-3">
             <a href="#">
-              <img alt=" " src={cat1} className="rounded-circle img-fluid border" />
+              <img
+                alt=" "
+                src={cat1}
+                className="rounded-circle img-fluid border"
+              />
             </a>
             <h5 className="text-center mt-3 mb-3">Watches</h5>
             <p className="text-center">
@@ -397,7 +425,11 @@ const Homepage = () => {
           </div>
           <div className="col-12 col-md-4 p-5 mt-3">
             <a href="#">
-              <img alt=" " src={cat2} className="rounded-circle img-fluid border" />
+              <img
+                alt=" "
+                src={cat2}
+                className="rounded-circle img-fluid border"
+              />
             </a>
             <h2 className="h5 text-center mt-3 mb-3">Shoes</h2>
             <p className="text-center">
@@ -406,7 +438,11 @@ const Homepage = () => {
           </div>
           <div className="col-12 col-md-4 p-5 mt-3">
             <a href="#">
-              <img alt=" " src={cat3} className="rounded-circle img-fluid border" />
+              <img
+                alt=" "
+                src={cat3}
+                className="rounded-circle img-fluid border"
+              />
             </a>
             <h2 className="h5 text-center mt-3 mb-3">Accessories</h2>
             <p className="text-center">

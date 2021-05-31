@@ -503,14 +503,16 @@ section {
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
   #templatemo_main_nav .navbar-nav {
-    max-width: 450px;
+    float: right;
+    width: max-content;
+    /* max-width: 450px; */
   }
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
   #templatemo_main_nav .navbar-nav {
-    max-width: 550px;
+    /* max-width: 550px; */
   }
   #template-mo-zay-hero-carousel .carousel-item {
     min-height: 30rem !important;
