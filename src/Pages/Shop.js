@@ -13,6 +13,7 @@ import axios from "axios";
 import notify from "../Notifu/notify";
 import Card from "../Components/ComputerCard";
 import EpabxCard from "../Components/epabxCard";
+import Modal from "../Components/Modal";
 
 const Shop = () => {
   const responsive = {
@@ -37,6 +38,7 @@ const Shop = () => {
   const [refresh, setRefresh] = useState(false);
   const [products, setProducts] = useState([]);
   const [searchterm, setSearchTerm] = useState("");
+  const [openModal, setOpenModal] = useState(false);
 
   useEffect(() => {
     axios({
@@ -134,17 +136,29 @@ const Shop = () => {
                           <h6 class="mb-3">{arg.keySpecs}</h6>
                           <p>{arg?.description}</p>
                           <div class="d-flex mb-3">
-                            <button class="btn btn-success  mr-3">
+                            <button
+                              type="button"
+                              class="btn btn-success mr-3"
+                              data-toggle="modal"
+                              data-target="#exampleModal"
+                              onClick={() => {
+                                setOpenModal(!openModal);
+                              }}
+                            >
                               Buy Now
                             </button>
-                            <button class="btn btn-outline-success">
-                              View Details
-                            </button>
+
+                            <Link to={`/shop/product/${arg?._id}`}>
+                              <button class="btn btn-outline-success">
+                                View Details
+                              </button>
+                            </Link>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+
                   // <div className="col-md-12">
                   //   <div className="card mb-4 product-wap rounded-0">
                   //     <div className="card rounded-0">
@@ -202,6 +216,7 @@ const Shop = () => {
                   // </div>
                 ))}
               </Carousel>
+              {openModal ? <Modal dataTarget={"exampleModal"} /> : null}
             </div>
             <hr className="my-5" />
             {/* computer */}
