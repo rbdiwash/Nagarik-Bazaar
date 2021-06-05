@@ -1,0 +1,12 @@
+td {
+  font-size: 15px;
+}
+
+@media (max-width: 1000px) {
+  td {
+    min-width: 130px;
+  }
+  .viewP h3 {
+    font-size: 22px;
+  }
+}

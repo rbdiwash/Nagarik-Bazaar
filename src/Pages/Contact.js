@@ -136,8 +136,9 @@ const Contact = () => {
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.489588618791!2d85.30596071448565!3d27.733041382781234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18de63b16877%3A0xf9b94f93b0b10fb!2smitranagar%20newbuspark!5e0!3m2!1sen!2snp!4v1619681307252!5m2!1sen!2snp"
           width="100%"
           height="100%"
+          title="address"
           // style="border:0;"
-          allowfullscreen=""
+          allowFullScreen=""
           loading="lazy"
         ></iframe>
       </div>

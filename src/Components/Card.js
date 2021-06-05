@@ -20,12 +20,12 @@ const Card = ({ productName, price, discount, brand }) => {
                   </a>
                 </li>
                 <li>
-                  <a
+                  <Link
+                    to={`/shop/product/${pid}`}
                     className="btn btn-success text-white mt-2"
-                    href="shop-single.html"
                   >
                     <i className="far fa-eye"></i>
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a

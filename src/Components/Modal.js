@@ -5,29 +5,29 @@ const Modal = ({ dataTarget }) => {
   return (
     <>
       <div
-        class="modal fade"
+        className="modal fade"
         id={dataTarget}
         tabindex="-1"
         role="dialog"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">
+        <div className="modal-dialog" role="document">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">
                 Want to Buy this?
               </h5>
               <button
                 type="button"
-                class="close"
+                className="close"
                 data-dismiss="modal"
                 aria-label="Close"
               >
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body text-center">
+            <div className="modal-body text-center">
               <h3>Currently we believe in cash in hand.</h3>
               <img
                 src={cash}
@@ -39,15 +39,15 @@ const Modal = ({ dataTarget }) => {
               Call : <i className="fa fa-phone"></i> +977-9851182929 <br /> to
               order or contact our salesman.
             </div>
-            {/* <div class="modal-footer">
+            {/* <div className="modal-footer">
               <button
                 type="button"
-                class="btn btn-secondary"
+                className="btn btn-secondary"
                 data-dismiss="modal"
               >
                 Close
               </button>
-              <button type="button" class="btn btn-primary">
+              <button type="button" className="btn btn-primary">
                 Save changes
               </button>
             </div> */}

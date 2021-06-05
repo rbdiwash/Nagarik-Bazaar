@@ -1,196 +1,81 @@
-import React from "react";
-import shop1 from "../assets/img/shop_01.jpg";
-import shop2 from "../assets/img/shop_02.jpg";
+import React, { useEffect, useState } from "react";
+import shop1 from "../assets/img/computer2.png";
+import shop2 from "../assets/img/computer.png";
+import ComputerCard from "../Components/ComputerCard";
+import axios from "axios";
+import notify from "../Notifu/notify";
+import Card from "../Components/ComputerCard";
 
 const CCTV = () => {
+  const [refresh, setRefresh] = useState(false);
+  const [products, setProducts] = useState([]);
+  const [searchterm, setSearchTerm] = useState("");
+
+  useEffect(() => {
+    axios({
+      method: "get",
+      url: "http://localhost:3003/posts",
+    })
+      .then((res) => {
+        console.log(res);
+        setProducts(res?.data);
+      })
+      .catch((err) => {
+        notify.handleError(err.data);
+        console.log(err);
+      });
+  }, [refresh]);
+
+  const cctv = products.filter((arg) => arg.category === "CCTV");
+  console.log(cctv);
+
+  const filteredData = cctv.filter((item) =>
+    searchterm === ""
+      ? item
+      : item?.title?.toLowerCase()?.includes(searchterm.toLowerCase()) ||
+        item?.keySpecs?.toLowerCase()?.includes(searchterm?.toLowerCase()) ||
+        item?.priceBefore?.toLowerCase()?.includes(searchterm?.toLowerCase()) ||
+        item?.priceAfter?.toLowerCase()?.includes(searchterm?.toLowerCase())
+  );
   return (
     <>
       <div className="container my-5">
         <div className="row" id="computer">
-          <h1 className="py-3 pb-4  text-center">Available CCTV Camera's</h1>
+          <div className="d-flex justify-content-between flex-wrap">
+            <h3 className="py-3 col-lg-5 col-md-12">
+              Available CCTV's ({cctv.length})
+            </h3>
+            <div class="form-row py-lg-3 col-lg-7 col-md-12">
+              <div className="form-group col-lg-11 col-md-10 col-sm-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="search"
+                  name="search"
+                  placeholder="Search by Name, Key Specifications, Price"
+                  onChange={(e) => {
+                    setSearchTerm(e.target.value);
+                  }}
+                />
+              </div>
+              <div className="form-group col-lg-1 col-md-2 cl-sm-2">
+                <button className="btn btn-info">Search</button>
+              </div>
+            </div>
+          </div>
           <hr className="mb-5" />
-          <div className="col-md-3">
-            <div className="card mb-4 product-wap rounded-0">
-              <div className="card rounded-0">
-                <img alt=" " className="card-img rounded-0 img-fluid" src={shop1} />
-                <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
-                  <ul className="list-unstyled">
-                    <li>
-                      <a
-                        className="btn btn-success text-white"
-                        href="shop-single.html"
-                      >
-                        <i className="far fa-heart"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="btn btn-success text-white mt-2"
-                        href="shop-single.html"
-                      >
-                        <i className="far fa-eye"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="btn btn-success text-white mt-2"
-                        href="shop-single.html"
-                      >
-                        <i className="fas fa-cart-plus"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="card-body">
-                <a href="shop-single.html" className="h3 text-decoration-none">
-                  Oupidatat non
-                </a>
-                <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
-                  <li>M/L/X/XL</li>
-                </ul>
-                <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
-                <p className="text-center mb-0">$250.00</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3">
-            <div className="card mb-4 product-wap rounded-0">
-              <div className="card rounded-0">
-                <img alt=" " className="card-img rounded-0 img-fluid" src={shop2} />
-                <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
-                  <ul className="list-unstyled">
-                    <li>
-                      <a
-                        className="btn btn-success text-white"
-                        href="shop-single.html"
-                      >
-                        <i className="far fa-heart"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="btn btn-success text-white mt-2"
-                        href="shop-single.html"
-                      >
-                        <i className="far fa-eye"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="btn btn-success text-white mt-2"
-                        href="shop-single.html"
-                      >
-                        <i className="fas fa-cart-plus"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="card-body">
-                <a href="shop-single.html" className="h3 text-decoration-none">
-                  Oupidatat non
-                </a>
-                <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
-                  <li>M/L/X/XL</li>
-                </ul>
-                <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
-                <p className="text-center mb-0">$250.00</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3">
-            <div className="card mb-4 product-wap rounded-0">
-              <div className="card rounded-0">
-                <img alt=" " className="card-img rounded-0 img-fluid" src={shop1} />
-                <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
-                  <ul className="list-unstyled">
-                    <li>
-                      <a
-                        className="btn btn-success text-white"
-                        href="shop-single.html"
-                      >
-                        <i className="far fa-heart"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="btn btn-success text-white mt-2"
-                        href="shop-single.html"
-                      >
-                        <i className="far fa-eye"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="btn btn-success text-white mt-2"
-                        href="shop-single.html"
-                      >
-                        <i className="fas fa-cart-plus"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="card-body">
-                <a href="shop-single.html" className="h3 text-decoration-none">
-                  Oupidatat non
-                </a>
-                <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
-                  <li>M/L/X/XL</li>
-                </ul>
-                <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
-                <p className="text-center mb-0">$250.00</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3">
-            <div className="card mb-4 product-wap rounded-0">
-              <div className="card rounded-0">
-                <img alt=" " className="card-img rounded-0 img-fluid" src={shop2} />
-                <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
-                  <ul className="list-unstyled">
-                    <li>
-                      <a
-                        className="btn btn-success text-white"
-                        href="shop-single.html"
-                      >
-                        <i className="far fa-heart"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="btn btn-success text-white mt-2"
-                        href="shop-single.html"
-                      >
-                        <i className="far fa-eye"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="btn btn-success text-white mt-2"
-                        href="shop-single.html"
-                      >
-                        <i className="fas fa-cart-plus"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="card-body">
-                <a href="shop-single.html" className="h3 text-decoration-none">
-                  Oupidatat non
-                </a>
-                <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
-                  <li>M/L/X/XL</li>
-                </ul>
-                <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
-                <p className="text-center mb-0">$250.00</p>
-              </div>
-            </div>
-          </div>
+
+          {filteredData?.reverse()?.map((arg) => (
+            <ComputerCard
+              productName={arg.title}
+              price={arg.priceAfter}
+              discount={arg.priceBefore}
+              brand={arg.keySpecs}
+              image={shop1}
+            />
+          ))}
         </div>
-      </div>
+      </div>{" "}
     </>
   );
 };

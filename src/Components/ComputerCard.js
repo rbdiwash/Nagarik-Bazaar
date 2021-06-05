@@ -1,54 +1,50 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import shop1 from "../assets/img/computer.png";
+import { Link, useParams } from "react-router-dom";
+// import shop1 from "../assets/img/computer.png";
 
-const Card = ({ productName, price, discount, brand, image }) => {
+const Card = ({ pid, productName, price, discount, brand, image, key }) => {
+  const id = useParams();
   return (
     <>
-      <div className="col-lg-3 col-md-4">
-        <div className="card mb-4 product-wap rounded-0">
-          <div className="card rounded-0">
-            <img alt=" " className="card-img rounded-0 img-fluid" src={image} />
-            <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
+      <div className="col-lg-3 col-md-6" key={key}>
+        <div className="card mb-4 product-wap ">
+          <div className="card border-0">
+            <img alt=" " className="card-img  img-fluid" src={image} />
+            <div className="card-img-overlay  product-overlay d-flex align-items-center justify-content-center">
               <ul className="list-unstyled">
                 <li>
-                  <a
-                    className="btn btn-success text-white"
-                    href="shop/single.html"
-                  >
+                  <a className="btn btn-primary text-white">
                     <i className="far fa-heart"></i>
                   </a>
                 </li>
                 <li>
-                  <a
-                    className="btn btn-success text-white mt-2"
-                    href="shop-single.html"
+                  <Link
+                    to={`/shop/product/${pid}`}
+                    className="btn btn-primary text-white mt-2"
                   >
                     <i className="far fa-eye"></i>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    className="btn btn-success text-white mt-2"
-                    href="shop-single.html"
-                  >
+                  <a className="btn btn-primary text-white mt-2">
                     <i className="fas fa-cart-plus"></i>
                   </a>
                 </li>
               </ul>
             </div>
           </div>
+
           <div className="card-body">
-            <Link to="/shop/single" className="h3 text-decoration-none">
+            <Link to={`/shop/product/${pid}`} className="text-decoration-none">
               {productName}
             </Link>
-            <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
-              <li>{brand}</li>
-            </ul>
-            <ul className="list-unstyled d-flex justify-content-center mb-1"></ul>
-            <p className="text-left mb-0">
+            <p>{brand}</p>
+            <button
+              className="text-left mb-0 btn btn-primary "
+              style={{ padding: "2px 4px", borderRadius: "50rem" }}
+            >
               <strike>Rs. {discount}</strike> Rs. {price}
-            </p>{" "}
+            </button>{" "}
           </div>
         </div>
       </div>

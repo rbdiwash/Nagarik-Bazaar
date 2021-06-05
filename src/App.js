@@ -10,11 +10,14 @@ import Shop from "./Pages/Shop";
 import Footer from "./Components/footer";
 import SingleProduct from "./Pages/SingleProduct";
 import Computers from "./Pages/computers";
-import Printers from "./Pages/CCTV";
-import CCTV from "./Pages/printers";
+import Printers from "./Pages/printers";
+import CCTV from "./Pages/CCTV";
 import EPABX from "./Pages/EPABX";
 import ScrollToTop from "./Components/ScrollToTop";
 import Login from "./Pages/Login";
+import { ToastContainer } from "react-toastify";
+import AddPost from "./Pages/Admin/AddPost";
+import ViewProducts from "./Pages/Admin/ViewProducts";
 
 function App() {
   return (
@@ -27,14 +30,21 @@ function App() {
           <Route exact path="/about" component={About}></Route>
           <Route exact path="/contact" component={Contact}></Route>
           <Route exact path="/shop" component={Shop}></Route>
-          <Route exact path="/shop/single" component={SingleProduct}></Route>
+          <Route
+            exact
+            path="/shop/product/:id"
+            component={SingleProduct}
+          ></Route>
           <Route exact path="/shop/computers" component={Computers}></Route>
           <Route exact path="/shop/cctv" component={CCTV}></Route>
           <Route exact path="/shop/printers" component={Printers}></Route>
           <Route exact path="/shop/epabx" component={EPABX}></Route>
           <Route exact path="/login" component={Login}></Route>
+          <Route exact path="/admin" component={AddPost}></Route>
+          <Route exact path="/admin/products" component={ViewProducts}></Route>
         </Switch>
         <Footer />
+        <ToastContainer />
       </Router>
     </>
   );

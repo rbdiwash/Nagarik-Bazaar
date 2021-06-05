@@ -34,7 +34,7 @@ const About = () => {
               </p>
             </div>
             <div className="col-md-4" data-aos="fade-left" data-aos-delay="200">
-              <img alt=" " src={about} alt="About Hero" />
+              <img src={about} alt="About Hero" />
             </div>
           </div>
         </div>
@@ -73,7 +73,7 @@ const About = () => {
               data-aos="zoom-out"
               data-aos-delay="200"
             >
-              <img alt=" " src={value1} className="img-fluid" alt=" " />
+              <img src={value1} className="img-fluid" alt=" " />
             </div>
           </div>
         </div>
@@ -213,7 +213,7 @@ const About = () => {
             >
               <div className="member">
                 <div className="member-img">
-                  <img alt=" " src={about} className="img-fluid" alt=" " />
+                  <img src={about} className="img-fluid" alt=" " />
                   <div className="social">
                     <a href="">
                       <i className="fab fa-twitter"></i>
@@ -244,7 +244,7 @@ const About = () => {
             >
               <div className="member">
                 <div className="member-img">
-                  <img alt=" " src={about} className="img-fluid" alt=" " />
+                  <img src={about} className="img-fluid" alt=" " />
 
                   <div className="social">
                     <a href="">
@@ -276,7 +276,7 @@ const About = () => {
             >
               <div className="member">
                 <div className="member-img">
-                  <img alt=" " src={about} className="img-fluid" alt=" " />
+                  <img src={about} className="img-fluid" alt=" " />
 
                   <div className="social">
                     <a href="">
@@ -308,7 +308,7 @@ const About = () => {
             >
               <div className="member">
                 <div className="member-img">
-                  <img alt=" " src={about} className="img-fluid" alt=" " />
+                  <img src={about} className="img-fluid" alt=" " />
 
                   <div className="social">
                     <a href="">
@@ -378,7 +378,8 @@ const About = () => {
                         <div className="row">
                           <div className="col-3 p-md-5">
                             <a href="#">
-                              <img alt=" "
+                              <img
+                                alt=" "
                                 className="img-fluid brand-img"
                                 src={brand_01}
                                 alt="Brand Logo"
@@ -387,7 +388,7 @@ const About = () => {
                           </div>
                           <div className="col-3 p-md-5">
                             <a href="#">
-                              <img alt=" "
+                              <img
                                 className="img-fluid brand-img"
                                 src={brand_02}
                                 alt="Brand Logo"
@@ -396,7 +397,7 @@ const About = () => {
                           </div>
                           <div className="col-3 p-md-5">
                             <a href="#">
-                              <img alt=" "
+                              <img
                                 className="img-fluid brand-img"
                                 src={brand_03}
                                 alt="Brand Logo"
@@ -405,7 +406,7 @@ const About = () => {
                           </div>
                           <div className="col-3 p-md-5">
                             <a href="#">
-                              <img alt=" "
+                              <img
                                 className="img-fluid brand-img"
                                 src={brand_04}
                                 alt="Brand Logo"
@@ -421,7 +422,7 @@ const About = () => {
                         <div className="row">
                           <div className="col-3 p-md-5">
                             <a href="#">
-                              <img alt=" "
+                              <img
                                 className="img-fluid brand-img"
                                 src="assets/img/brand_01.png"
                                 alt="Brand Logo"
@@ -430,7 +431,7 @@ const About = () => {
                           </div>
                           <div className="col-3 p-md-5">
                             <a href="#">
-                              <img alt=" "
+                              <img
                                 className="img-fluid brand-img"
                                 src="assets/img/brand_02.png"
                                 alt="Brand Logo"
@@ -439,7 +440,7 @@ const About = () => {
                           </div>
                           <div className="col-3 p-md-5">
                             <a href="#">
-                              <img alt=" "
+                              <img
                                 className="img-fluid brand-img"
                                 src="assets/img/brand_03.png"
                                 alt="Brand Logo"
@@ -448,7 +449,7 @@ const About = () => {
                           </div>
                           <div className="col-3 p-md-5">
                             <a href="#">
-                              <img alt=" "
+                              <img
                                 className="img-fluid brand-img"
                                 src="assets/img/brand_04.png"
                                 alt="Brand Logo"
@@ -464,7 +465,7 @@ const About = () => {
                         <div className="row">
                           <div className="col-3 p-md-5">
                             <a href="#">
-                              <img alt=" "
+                              <img
                                 className="img-fluid brand-img"
                                 src="assets/img/brand_01.png"
                                 alt="Brand Logo"
@@ -473,7 +474,7 @@ const About = () => {
                           </div>
                           <div className="col-3 p-md-5">
                             <a href="#">
-                              <img alt=" "
+                              <img
                                 className="img-fluid brand-img"
                                 src="assets/img/brand_02.png"
                                 alt="Brand Logo"
@@ -482,7 +483,7 @@ const About = () => {
                           </div>
                           <div className="col-3 p-md-5">
                             <a href="#">
-                              <img alt=" "
+                              <img
                                 className="img-fluid brand-img"
                                 src="assets/img/brand_03.png"
                                 alt="Brand Logo"
@@ -491,7 +492,7 @@ const About = () => {
                           </div>
                           <div className="col-3 p-md-5">
                             <a href="#">
-                              <img alt=" "
+                              <img
                                 className="img-fluid brand-img"
                                 src="assets/img/brand_04.png"
                                 alt="Brand Logo"

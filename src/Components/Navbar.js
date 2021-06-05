@@ -1,7 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 const Navbar = () => {
+  const history = useHistory();
+
+  const logout = () => {
+    localStorage.clear();
+    history.push("/");
+    window.location.reload();
+  };
   return (
     <div>
       <nav
@@ -118,11 +125,27 @@ const Navbar = () => {
                   Contact
                 </Link>
               </li>
-              <li className="nav-item ">
-                <Link className="nav-link" to="/login">
-                  Login
-                </Link>
-              </li>
+
+              {localStorage.getItem("userType") === "Nagarik-Admin" ? (
+                <>
+                  <li className="nav-item pr-4">
+                    <Link className="nav-link" to="/admin">
+                      Admin
+                    </Link>
+                  </li>
+                  <li className="nav-item pr-4">
+                    <Link className="nav-link" to="/" onClick={() => logout()}>
+                      Logout
+                    </Link>
+                  </li>
+                </>
+              ) : (
+                <li className="nav-item pr-4">
+                  <Link className="nav-link" to="/login">
+                    Login
+                  </Link>
+                </li>
+              )}
             </ul>
           </div>
         </div>

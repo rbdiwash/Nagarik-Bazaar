@@ -50,7 +50,7 @@ const Homepage = () => {
             <div className="container">
               <div className="row p-5">
                 <div className="mx-auto col-md-8 col-lg-6 order-lg-last">
-                  <img alt=" " className="img-fluid" src={BANNER1} alt=" " />
+                  <img alt="" className="img-fluid" src={BANNER1} />
                 </div>
                 <div className="col-lg-6 mb-0 d-flex align-items-center">
                   <div className="text-align-left align-self-center">
@@ -73,7 +73,7 @@ const Homepage = () => {
             <div className="container">
               <div className="row p-5">
                 <div className="mx-auto col-md-8 col-lg-6 order-lg-last">
-                  <img alt=" " className="img-fluid" src={BANNER2} alt=" " />
+                  <img alt="" className="img-fluid" src={BANNER2} />
                 </div>
                 <div className="col-lg-6 mb-0 d-flex align-items-center">
                   <div className="text-align-left">
@@ -98,7 +98,7 @@ const Homepage = () => {
             <div className="container">
               <div className="row p-5">
                 <div className="mx-auto col-md-8 col-lg-6 order-lg-last">
-                  <img alt=" " className="img-fluid" src={BANNER3} alt=" " />
+                  <img alt="" className="img-fluid" src={BANNER3} />
                 </div>
                 <div className="col-lg-6 mb-0 d-flex align-items-center">
                   <div className="text-align-left">
@@ -167,7 +167,7 @@ const Homepage = () => {
               data-aos="zoom-out"
               data-aos-delay="200"
             >
-              <img alt=" " src={BANNER1} className="img-fluid" alt=" " />
+              <img alt="" src={BANNER1} className="img-fluid" />
             </div>
           </div>
         </div>
@@ -184,7 +184,7 @@ const Homepage = () => {
           <div className="row">
             <div className="col-lg-4">
               <div className="box" data-aos="fade-up" data-aos-delay="200">
-                <img alt=" " src={value1} className="img-fluid" alt=" " />
+                <img alt="" src={value1} className="img-fluid" />
                 <h3>Ad cupiditate sed est odio</h3>
                 <p>
                   Eum ad dolor et. Autem aut fugiat debitis voluptatem
@@ -195,7 +195,7 @@ const Homepage = () => {
 
             <div className="col-lg-4 mt-4 mt-lg-0">
               <div className="box" data-aos="fade-up" data-aos-delay="400">
-                <img alt=" " src={value2} className="img-fluid" alt=" " />
+                <img alt="" src={value2} className="img-fluid" />
                 <h3>Voluptatem voluptatum alias</h3>
                 <p>
                   Repudiandae amet nihil natus in distinctio suscipit id.
@@ -206,7 +206,7 @@ const Homepage = () => {
 
             <div className="col-lg-4 mt-4 mt-lg-0">
               <div className="box" data-aos="fade-up" data-aos-delay="600">
-                <img alt=" " src={value3} className="img-fluid" alt=" " />
+                <img alt="" src={value3} className="img-fluid" />
                 <h3>Fugit cupiditate alias nobis.</h3>
                 <p>
                   Quam rem vitae est autem molestias explicabo debitis sint.
@@ -320,7 +320,7 @@ const Homepage = () => {
 
           <div className="row">
             <div className="col-lg-6">
-              <img alt=" " src={features} className="img-fluid" alt=" " />
+              <img alt="" src={features} className="img-fluid" />
             </div>
 
             <div className="col-lg-6 mt-5 mt-lg-0 d-flex">
@@ -411,42 +411,48 @@ const Homepage = () => {
         </div>
         <div className="row">
           <div className="col-12 col-md-4 p-5 mt-3">
-            <a href="#">
+            <a href="/">
               <img
-                alt=" "
+                alt=""
                 src={cat1}
                 className="rounded-circle img-fluid border"
               />
             </a>
             <h5 className="text-center mt-3 mb-3">Watches</h5>
             <p className="text-center">
-              <a className="btn btn-primary">Go Shop</a>
+              <a href="/" className="btn btn-primary">
+                Go Shop
+              </a>
             </p>
           </div>
           <div className="col-12 col-md-4 p-5 mt-3">
-            <a href="#">
+            <a href="/">
               <img
-                alt=" "
+                alt=""
                 src={cat2}
                 className="rounded-circle img-fluid border"
               />
             </a>
             <h2 className="h5 text-center mt-3 mb-3">Shoes</h2>
             <p className="text-center">
-              <a className="btn btn-primary">Go Shop</a>
+              <a href="/" className="btn btn-primary">
+                Go Shop
+              </a>
             </p>
           </div>
           <div className="col-12 col-md-4 p-5 mt-3">
-            <a href="#">
+            <a href="/">
               <img
-                alt=" "
+                alt=""
                 src={cat3}
                 className="rounded-circle img-fluid border"
               />
             </a>
             <h2 className="h5 text-center mt-3 mb-3">Accessories</h2>
             <p className="text-center">
-              <a className="btn btn-primary">Go Shop</a>
+              <a href="/" className="btn btn-primary">
+                Go Shop
+              </a>
             </p>
           </div>
         </div>
@@ -469,7 +475,7 @@ const Homepage = () => {
             <div className="col-12 col-md-4 mb-4">
               <div className="card h-100">
                 <a href="shop-single.html">
-                  <img alt=" " src={feat1} className="card-img-top" alt="..." />
+                  <img alt="" src={feat1} className="card-img-top" />
                 </a>
                 <div className="card-body">
                   <ul className="list-unstyled d-flex justify-content-between">
@@ -499,7 +505,7 @@ const Homepage = () => {
             <div className="col-12 col-md-4 mb-4">
               <div className="card h-100">
                 <a href="shop-single.html">
-                  <img alt=" " src={feat2} className="card-img-top" alt="..." />
+                  <img alt="" src={feat2} className="card-img-top" />
                 </a>
                 <div className="card-body">
                   <ul className="list-unstyled d-flex justify-content-between">
@@ -529,7 +535,7 @@ const Homepage = () => {
             <div className="col-12 col-md-4 mb-4">
               <div className="card h-100">
                 <a href="shop-single.html">
-                  <img alt=" " src={feat3} className="card-img-top" alt="..." />
+                  <img alt="" src={feat3} className="card-img-top" />
                 </a>
                 <div className="card-body">
                   <ul className="list-unstyled d-flex justify-content-between">
