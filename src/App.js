@@ -18,6 +18,7 @@ import Login from "./Pages/Login";
 import { ToastContainer } from "react-toastify";
 import AddPost from "./Pages/Admin/AddPost";
 import ViewProducts from "./Pages/Admin/ViewProducts";
+import NotFound from "./Pages/NotFound";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           <Route exact path="/login" component={Login}></Route>
           <Route exact path="/admin" component={AddPost}></Route>
           <Route exact path="/admin/products" component={ViewProducts}></Route>
+          <Route component={NotFound}></Route>
         </Switch>
         <Footer />
         <ToastContainer />
