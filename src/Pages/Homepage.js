@@ -14,6 +14,7 @@ import value3 from "../assets/img/values-3.png";
 import features from "../assets/img/features.png";
 import CountUp from "react-countup";
 import AOS from "aos";
+import { Link } from "react-router-dom";
 // import "../assets/css/templatemo.css";
 
 const Homepage = () => {
@@ -151,14 +152,14 @@ const Homepage = () => {
                 well managed.
               </h2>
               <div data-aos="fade-up" data-aos-delay="600">
-                <div className="text-center text-lg-start">
-                  <a
-                    href="#about"
+                <div className=" text-lg-start">
+                  <Link
+                    to="/about"
                     className="btn btn-primary scrollto d-inline-flex align-items-center justify-content-center align-self-center"
                   >
                     <span>Get Started</span>
                     {/* <i className="fa fa-arrow-right"></i> */}
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -269,7 +270,6 @@ const Homepage = () => {
 
             <div className="col-lg-3 col-md-6">
               <div className="count-box">
-                {/* <i className="bi bi-headset" style={{ color: "#15be56" }}></i> */}
                 <i
                   className="fa fa-headphones"
                   aria-hidden="true"
@@ -282,9 +282,9 @@ const Homepage = () => {
                     data-purecounter-duration="1"
                     className="purecounter"
                   >
-                    <CountUp end={1265} duration={2.75}></CountUp>
+                    <CountUp end={126} duration={2.75}></CountUp>
                   </span>
-                  <p>Hours Of Support</p>
+                  <p>Hours Support</p>
                 </div>
               </div>
             </div>
@@ -399,60 +399,51 @@ const Homepage = () => {
       </section>
 
       {/* <!-- Start Categories of The Month --> */}
-      <section className="container py-5">
-        <div className="row text-center pt-3">
+      <section className="container py-5 category">
+        <div className="row text-center pt-3" data-aos="fade-up">
           <div className="col-lg-6 m-auto">
-            <h1 className="h1">Categories of The Month</h1>
-            <p>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
-            </p>
+            <h1 className="h2">Categories of the Month</h1>
+            <p>Most popular and products having most sell in this month.</p>
           </div>
         </div>
-        <div className="row">
-          <div className="col-12 col-md-4 p-5 mt-3">
-            <a href="/">
-              <img
-                alt=""
-                src={cat1}
-                className="rounded-circle img-fluid border"
-              />
-            </a>
-            <h5 className="text-center mt-3 mb-3">Watches</h5>
+        <div className="row text-center">
+          <div
+            className="col-12 col-md-4 p-5 mt-3"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img alt="" src={BANNER2} className=" img-fluid border shadow" />
+            <h2 className="h5 text-center mt-3 mb-3">Computers</h2>
             <p className="text-center">
-              <a href="/" className="btn btn-primary">
-                Go Shop
-              </a>
+              <Link to="/shop" className="btn btn-primary">
+                Shop
+              </Link>
             </p>
           </div>
-          <div className="col-12 col-md-4 p-5 mt-3">
-            <a href="/">
-              <img
-                alt=""
-                src={cat2}
-                className="rounded-circle img-fluid border"
-              />
-            </a>
-            <h2 className="h5 text-center mt-3 mb-3">Shoes</h2>
+          <div
+            className="col-12 col-md-4 p-5 mt-3"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <img alt="" src={BANNER1} className=" img-fluid border shadow" />
+            <h2 className="h5 text-center mt-3 mb-3">CCTV</h2>
             <p className="text-center">
-              <a href="/" className="btn btn-primary">
+              <Link to="/shop" className="btn btn-primary">
                 Go Shop
-              </a>
+              </Link>
             </p>
           </div>
-          <div className="col-12 col-md-4 p-5 mt-3">
-            <a href="/">
-              <img
-                alt=""
-                src={cat3}
-                className="rounded-circle img-fluid border"
-              />
-            </a>
-            <h2 className="h5 text-center mt-3 mb-3">Accessories</h2>
+          <div
+            className="col-12 col-md-4 p-5 mt-3"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <img alt="" src={BANNER3} className=" img-fluid border shadow" />
+            <h2 className="h5 text-center mt-3 mb-3">EPABX</h2>
             <p className="text-center">
-              <a href="/" className="btn btn-primary">
+              <Link to="/shop" className="btn btn-primary">
                 Go Shop
-              </a>
+              </Link>
             </p>
           </div>
         </div>
@@ -460,7 +451,7 @@ const Homepage = () => {
       {/* <!-- End Categories of The Month --> */}
 
       {/* <!-- Start Featured Product --> */}
-      <section className="bg-light">
+      {/* <section className="bg-light">
         <div className="container py-5">
           <div className="row text-center py-3">
             <div className="col-lg-6 m-auto">
@@ -565,6 +556,7 @@ const Homepage = () => {
           </div>
         </div>
       </section>
+      */}
       {/* <!-- End Featured Product --> */}
     </>
   );

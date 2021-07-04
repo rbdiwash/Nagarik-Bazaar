@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import "./Printercard.css";
-// import shop1 from "../assets/img/computer.png";
+import AOS from "aos";
 
 const PrinterCard = ({
   pid,
@@ -13,6 +13,11 @@ const PrinterCard = ({
   key,
 }) => {
   const id = useParams();
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
   return (
     <>
       {/* <div
@@ -20,7 +25,10 @@ const PrinterCard = ({
         style={{ position: "relative" }}
       >
         <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3"> */}
-      <div class="col-lg-4 col-md-6 col-sm-12 printercard mb-4 mb-lg-0">
+      <div
+        class="col-lg-4 col-md-6 col-sm-12 printercard mb-4 mb-lg-0"
+        data-aos="zoom-out"
+      >
         <div class="card h-100 shadow-sm">
           {" "}
           <img

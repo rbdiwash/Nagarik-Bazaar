@@ -63,7 +63,7 @@ const ViewProducts = () => {
           </div>
           <hr />
           <div class="form-row pt-4">
-            <div className="form-group col-lg-5 col-md-6">
+            <div className="form-group col-lg-11 col-md-6">
               <input
                 type="text"
                 class="form-control"
@@ -76,7 +76,7 @@ const ViewProducts = () => {
               />
             </div>
             <div className="form-group col-lg-1 col-md-2">
-              <button className="btn btn-info">Search</button>
+              <button className="btn btn-success">Search</button>
             </div>
           </div>
           <div className="table-responsive text-center">

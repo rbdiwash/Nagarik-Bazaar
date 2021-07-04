@@ -119,6 +119,7 @@ const Navbar = () => {
                 <Link className="nav-link" to="/shop">
                   Shop
                 </Link>
+                <span className="badge">New</span>
               </li>
               <li className="nav-item pr-4">
                 <Link className="nav-link" to="/contact">

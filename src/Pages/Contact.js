@@ -121,7 +121,9 @@ const Contact = () => {
                       Your message has been sent. Thank you!
                     </div>
 
-                    <button type="submit">Send Message</button>
+                    <button type="submit" className="btn btn-primary">
+                      Send Message
+                    </button>
                   </div>
                 </div>
               </form>

@@ -14,6 +14,7 @@ import notify from "../Notifu/notify";
 import Card from "../Components/ComputerCard";
 import EpabxCard from "../Components/epabxCard";
 import Modal from "../Components/Modal";
+import AOS from "aos";
 
 const Shop = () => {
   const responsive = {
@@ -53,6 +54,9 @@ const Shop = () => {
         notify.handleError(err.data);
         console.log(err);
       });
+    AOS.init({
+      duration: 3000,
+    });
   }, [refresh]);
 
   const cctv = products.filter((arg) => arg.category === "CCTV");
@@ -253,7 +257,7 @@ const Shop = () => {
             <hr className="my-5" />
 
             {/* printer */}
-            <div className="row" id="printer">
+            <div className="row" id="printer" data-aos="fade-right">
               <h1 className="py-3 pb-4  text-center">Printers</h1>
               {printer
                 .reverse()
@@ -280,7 +284,7 @@ const Shop = () => {
             <hr className="my-5" />
 
             {/* cctv */}
-            <div className="row" id="cctv">
+            <div className="row" id="cctv" data-aos="fade-left">
               <h1 className="py-3 pb-4  text-center">CCTV</h1>
               {cctv
                 .reverse()
@@ -307,7 +311,7 @@ const Shop = () => {
             <hr className="my-5" />
 
             {/* EPABX */}
-            <div className="row" id="epabx">
+            <div className="row" id="epabx" data-aos="zoom-out">
               <h1 className="py-3 pb-4  text-center">EPABX</h1>
               {epabx
                 .reverse()
