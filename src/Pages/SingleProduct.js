@@ -1,15 +1,15 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
-import shop2 from "../assets/img/computer.png";
 import Modal from "../Components/Modal";
 import notify from "../Notifu/notify";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
 const SingleProduct = () => {
   const { id } = useParams();
   const [refresh, setRefresh] = useState(false);
   const [products, setProducts] = useState([]);
-  const [searchterm, setSearchTerm] = useState("");
 
   useEffect(() => {
     axios({
@@ -17,7 +17,6 @@ const SingleProduct = () => {
       url: "http://localhost:3003/posts",
     })
       .then((res) => {
-        console.log(res?.data);
         setProducts(res?.data);
       })
       .catch((err) => {
@@ -26,7 +25,7 @@ const SingleProduct = () => {
       });
   }, [refresh]);
   const single = products?.filter((arg) => arg._id === id)[0];
-  console.log(single);
+  console.log(single?.image?.map((arg) => arg));
   const [openModal, setOpenModal] = useState(false);
 
   return (
@@ -34,18 +33,37 @@ const SingleProduct = () => {
       <section id="portfolio-details" className="portfolio-details">
         <div className="container">
           <div className="row gy-4">
-            <div className="col-lg-6">
+            <div className="col-lg-7">
               <div className="portfolio-details-slider swiper-container">
                 <div className="swiper-wrapper align-items-center">
                   <div className="swiper-slide">
-                    <img alt="" src={shop2} />
+                    <Carousel
+                      autoPlay={true}
+                      autoPlaySpeed={3000}
+                      infiniteLoop={true}
+                      autoFocus={true}
+                      showArrows={true}
+                      showIndicators={true}
+                      showThumbs={true}
+                      useKeyboardArrows={true}
+                      verticalSwipe="natural"
+                    >
+                      {single?.image?.map((img) => (
+                        <a
+                          href={img}
+                          data-lightbox="photos"
+                          data-title="Photos"
+                        >
+                          <img alt="" src={img} className="rounded img-fluid" />
+                        </a>
+                      ))}
+                    </Carousel>
                   </div>
                 </div>
-                <div className="swiper-pagination"></div>
               </div>
             </div>
 
-            <div className="col-lg-5 offset-lg-1">
+            <div className="col-lg-5 ">
               <div className="portfolio-info">
                 <h3>Product Details</h3>
                 <ul>

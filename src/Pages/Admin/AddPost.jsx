@@ -7,8 +7,32 @@ import { Link } from "react-router-dom";
 const AddPost = () => {
   const history = useHistory();
   const { register, handleSubmit } = useForm();
-  console.log(localStorage.getItem("token"));
   const onSubmit = (data) => {
+    const myData = {
+      title: data.title,
+      keySpecs: data.keySpecs,
+      category: data.category,
+      description: data.description,
+      priceBefore: data.priceBefore,
+      priceAfter: data.priceAfter,
+      image: data.image,
+    };
+    // let finalData = new FormData();
+    // for (const key of Object.keys(myData)) {
+    //   finalData.append(key, myData[key]);
+    // }
+
+    let finalData = new FormData();
+    for (const key of Object.keys(myData)) {
+      if (key === "image")
+        for (let i = 0; i < myData.image.length; i++) {
+          finalData.append("image", myData.image[i]);
+        }
+      else {
+        finalData.append(key, myData[key]);
+      }
+    }
+
     axios({
       method: "post",
       url: "http://localhost:3003/posts",
@@ -19,15 +43,7 @@ const AddPost = () => {
       },
       // headers: localStorage.getItem("token"),
 
-      data: {
-        title: data.title,
-        keySpecs: data.keySpecs,
-        category: data.category,
-        description: data.description,
-        priceBefore: data.priceBefore,
-        priceAfter: data.priceAfter,
-        // image: data.image,
-      },
+      data: finalData,
     })
       .then((res) => {
         console.log(res);
@@ -44,7 +60,7 @@ const AddPost = () => {
       <div className="container">
         <div className="row justify-content-center ">
           <div
-            className="add-product col-lg-6 col-md-9 col-sm-12  p-4 shadow rounded"
+            className="add-product col-lg-6 col-md-9 col-sm-12  p-4 shadow rounded bg-white"
             style={{ margin: "70px" }}
           >
             <div className="d-flex justify-content-between px-3">
@@ -137,12 +153,15 @@ const AddPost = () => {
               <div className="form-group">
                 <label htmlFor="exampleFormControlFile1">Upload Photos</label>
                 <input
+                  name="image"
                   type="file"
                   className="form-control-file"
                   id="image"
+                  {...register("image")}
                   multiple
                 />
               </div>
+              <hr className="my-4" />
               <button type="submit" className="btn btn-primary">
                 Submit
               </button>

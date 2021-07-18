@@ -28,7 +28,7 @@ const fileFilter = (req, file, cb) => {
 //init upload
 const upload = multer({
   storage: storage,
-  limits: { fileSize: 1024 * 1024 * 5 },
+  limits: { fileSize: 1024 * 1024 * 10 },
   fileFilter: fileFilter,
 });
 
@@ -37,7 +37,10 @@ router.post("/", auth.verify, upload.any(), (req, res) => {
   console.log(req.files);
 
   if (req.files) {
-    req.body.image = process.env.IMAGE_URL + req.files[0].path;
+    req.body.image = [];
+    for (let i = 0; i < req.files.length; i++) {
+      req.body.image.push(process.env.IMAGE_URL + req.files[i].path);
+    }
   }
   const posts = new Post(
     req.body

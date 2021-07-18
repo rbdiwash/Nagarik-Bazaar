@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const path = require("path");
 const cors = require("cors");
 const mongoose = require("mongoose");
 require("dotenv/config");
@@ -15,6 +16,7 @@ const authRoute = require("./auth");
 
 app.use("/posts", PostRoute);
 app.use("/auth", authRoute);
+app.use("/uploads", express.static(path.join(`${__dirname}/uploads`)));
 
 //routes
 app.get("/", (req, res) => {
