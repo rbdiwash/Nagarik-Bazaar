@@ -5,6 +5,7 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 require("dotenv/config");
 const bodyParser = require("body-parser");
+const PORT = process.env.PORT || 3003;
 //import routes
 
 app.use(cors());
@@ -31,6 +32,6 @@ mongoose.connect(
 );
 
 //start listening to the server
-app.listen(3003, () => {
+app.listen(PORT, () => {
   console.log("running");
 });

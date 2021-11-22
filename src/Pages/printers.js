@@ -5,6 +5,7 @@ import ComputerCard from "../Components/ComputerCard";
 import axios from "axios";
 import notify from "../Notifu/notify";
 import Card from "../Components/ComputerCard";
+import PrinterCard from "../Components/PrinterCard";
 
 const Printers = () => {
   const [refresh, setRefresh] = useState(false);
@@ -14,20 +15,17 @@ const Printers = () => {
   useEffect(() => {
     axios({
       method: "get",
-      url: "http://localhost:3003/posts",
+      url: "https://nagarikmart-backend.herokuapp.com/posts",
     })
       .then((res) => {
-        console.log(res);
         setProducts(res?.data);
       })
       .catch((err) => {
         notify.handleError(err.data);
-        console.log(err);
       });
   }, [refresh]);
 
   const printer = products.filter((arg) => arg.category === "Printer");
-  console.log(printer);
 
   const filteredData = printer.filter((item) =>
     searchterm === ""
@@ -43,13 +41,13 @@ const Printers = () => {
         <div className="row" id="computer">
           <div className="d-flex justify-content-between flex-wrap">
             <h3 className="py-3 col-lg-5 col-md-12">
-              Available Printer's ({printer.length})
+              Available Printer's ({printer?.length})
             </h3>
-            <div class="form-row py-lg-3 col-lg-7 col-md-12">
+            <div className="form-row py-lg-3 col-lg-7 col-md-12">
               <div className="form-group col-lg-11 col-md-10 col-sm-6">
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   id="search"
                   name="search"
                   placeholder="Search by Name, Key Specifications, Price"
@@ -65,12 +63,12 @@ const Printers = () => {
           </div>
           <hr className="mb-5" />
           {filteredData?.reverse()?.map((arg) => (
-            <ComputerCard
+            <PrinterCard
               productName={arg.title}
               price={arg.priceAfter}
               discount={arg.priceBefore}
               brand={arg.keySpecs}
-              image={shop1}
+              image={arg.image[0]}
             />
           ))}{" "}
         </div>

@@ -51,29 +51,6 @@ const Homepage = () => {
             <div className="container">
               <div className="row p-5">
                 <div className="mx-auto col-md-8 col-lg-6 order-lg-last">
-                  <img alt="" className="img-fluid" src={BANNER1} />
-                </div>
-                <div className="col-lg-6 mb-0 d-flex align-items-center">
-                  <div className="text-align-left align-self-center">
-                    <h1 className="display-5">
-                      <b>CCTV Camera's</b>
-                    </h1>
-                    <h3 className="h2">
-                      Tiny and Perfect Camera with High Quality.
-                    </h3>
-                    <p>
-                      We provide you the best available CCTV camera available in
-                      the market in reasonable price with maintenance service.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <div className="container">
-              <div className="row p-5">
-                <div className="mx-auto col-md-8 col-lg-6 order-lg-last">
                   <img alt="" className="img-fluid" src={BANNER2} />
                 </div>
                 <div className="col-lg-6 mb-0 d-flex align-items-center">
@@ -88,13 +65,47 @@ const Homepage = () => {
                     <p>
                       We have computer and its Accessories available for your
                       home or firm that best suits the business at very low
-                      cost.
+                      cost.{" "}
+                      <Link to="/shop/computers">
+                        <button className="btn btn-outline-secondary">
+                          See Products
+                        </button>
+                      </Link>
                     </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <div className="carousel-item ">
+            <div className="container">
+              <div className="row p-5">
+                <div className="mx-auto col-md-8 col-lg-6 order-lg-last">
+                  <img alt="" className="img-fluid" src={BANNER1} />
+                </div>
+                <div className="col-lg-6 mb-0 d-flex align-items-center">
+                  <div className="text-align-left align-self-center">
+                    <h1 className="display-5">
+                      <b>CCTV Camera's</b>
+                    </h1>
+                    <h3 className="h2">
+                      Tiny and Perfect Camera with High Quality.
+                    </h3>
+                    <p>
+                      We provide you the best available CCTV camera available in
+                      the market in reasonable price with maintenance service.{" "}
+                      <Link to="/shop/cctv">
+                        <button className="btn btn-outline-secondary">
+                          Explore
+                        </button>
+                      </Link>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="carousel-item">
             <div className="container">
               <div className="row p-5">

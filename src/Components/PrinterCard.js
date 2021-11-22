@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link, useParams } from "react-router-dom";
-import "./Printercard.css";
-import AOS from "aos";
+// import shop1 from "../assets/img/computer.png";
 
 const PrinterCard = ({
   pid,
@@ -13,55 +12,50 @@ const PrinterCard = ({
   key,
 }) => {
   const id = useParams();
-  useEffect(() => {
-    AOS.init({
-      duration: 2000,
-    });
-  }, []);
   return (
     <>
-      {/* <div
-        class="container-fluid bg-trasparent my-4 p-3 printercard"
-        style={{ position: "relative" }}
-      >
-        <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3"> */}
-      <div
-        class="col-lg-4 col-md-6 col-sm-12 printercard mb-4 mb-lg-0"
-        data-aos="zoom-out"
-      >
-        <div class="card h-100 shadow-sm">
-          {" "}
-          <img
-            src="https://www.freepnglogos.com/uploads/notebook-png/notebook-laptop-png-images-you-can-download-mashtrelo-14.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="label-top shadow-sm discBtn">SELL</div>
-          <div class="card-body">
-            <div class="clearfix mb-3">
-              {" "}
-              <span class="float-start badge rounded-pill bg-success">
-                <strike> Rs. {discount}</strike> Rs.{price}
-              </span>{" "}
-              <span class="float-end">
-                <Link class="text-muted small" to={`/shop/product/${pid}`}>
-                  Reviews
-                </Link>
-              </span>{" "}
+      <div className="col-lg-3 col-md-6" key={key}>
+        <div className="card mb-4 product-wap ">
+          <div className="card border-0">
+            <img alt=" " className="card-img  img-fluid rounded" src={image} />
+            <div className="card-img-overlay  product-overlay d-flex align-items-center justify-content-center">
+              <ul className="list-unstyled">
+                <li>
+                  <a className="btn btn-primary text-white">
+                    <i className="far fa-heart"></i>
+                  </a>
+                </li>
+                <li>
+                  <Link
+                    to={`/shop/product/${pid}`}
+                    className="btn btn-primary text-white mt-2"
+                  >
+                    <i className="far fa-eye"></i>
+                  </Link>
+                </li>
+                <li>
+                  <a className="btn btn-primary text-white mt-2">
+                    <i className="fas fa-cart-plus"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <h5 class="card-title"> {productName}</h5>
-            <p> {brand}</p>
-            <div class="text-center my-2">
-              {" "}
-              <Link to={`/shop/product/${pid}`} class="btn btn-warning">
-                Check offer
-              </Link>{" "}
-            </div>
+          </div>
+
+          <div className="card-body">
+            <Link to={`/shop/product/${pid}`} className="text-decoration-none">
+              {productName}
+            </Link>
+            <p>{brand}</p>
+            <button
+              className="text-left mb-0 btn btn-primary "
+              style={{ padding: "2px 4px", borderRadius: "50rem" }}
+            >
+              <strike>Rs. {discount}</strike> Rs. {price}
+            </button>{" "}
           </div>
         </div>
       </div>
-      {/* </div>
-      </div> */}
     </>
   );
 };

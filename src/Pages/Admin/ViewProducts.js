@@ -14,10 +14,9 @@ const ViewProducts = () => {
   useEffect(() => {
     axios({
       method: "get",
-      url: "http://localhost:3003/posts",
+      url: "https://nagarikmart-backend.herokuapp.com/posts",
     })
       .then((res) => {
-        console.log(res);
         setProducts(res?.data);
       })
       .catch((err) => {
@@ -29,7 +28,7 @@ const ViewProducts = () => {
   const removeData = (id) => {
     axios({
       method: "delete",
-      url: `http://localhost:3003/posts/${id}`,
+      url: `https://nagarikmart-backend.herokuapp.com/posts/${id}`,
     })
       .then((res) => {
         // $(`#deleteModal-${id}`).modal("hide");
@@ -62,11 +61,11 @@ const ViewProducts = () => {
             </Link>
           </div>
           <hr />
-          <div class="form-row pt-4">
+          <div className="form-row pt-4">
             <div className="form-group col-lg-11 col-md-6">
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 id="search"
                 name="search"
                 placeholder="Search by Name, Category, Price"
@@ -80,7 +79,7 @@ const ViewProducts = () => {
             </div>
           </div>
           <div className="table-responsive text-center">
-            <table class="table table-striped">
+            <table className="table table-striped">
               <thead>
                 <tr>
                   <th scope="col">S.N</th>
@@ -143,32 +142,32 @@ const ViewProducts = () => {
       </div>
       {openmodal ? (
         <div
-          class="modal fade"
+          className="modal fade"
           // id={`deleteModal-${id}`}
           tabindex="-1"
           role="dialog"
           aria-labelledby="deleteModal"
           aria-hidden="true"
         >
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="title">
+          <div className="modal-dialog" role="document">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title" id="title">
                   Sure want to Delete this?{" "}
                 </h5>
                 <button
                   type="button"
-                  class="close"
+                  className="close"
                   aria-label="Close"
                   data-dismiss="modal"
                 >
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-footer">
+              <div className="modal-footer">
                 <button
                   type="button"
-                  class="btn btn-danger"
+                  className="btn btn-danger"
                   onClick={() => {
                     removeData(id);
                     setModal(false);
@@ -179,7 +178,7 @@ const ViewProducts = () => {
                 <button
                   type="button"
                   data-dismiss="modal"
-                  class="btn btn-primary"
+                  className="btn btn-primary"
                 >
                   No
                 </button>

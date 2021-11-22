@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useHistory } from "react-router";
 import axios from "axios";
@@ -7,7 +7,10 @@ import { Link } from "react-router-dom";
 const AddPost = () => {
   const history = useHistory();
   const { register, handleSubmit } = useForm();
+  const [loading, setLoading] = useState(false);
+
   const onSubmit = (data) => {
+    setLoading(true);
     const myData = {
       title: data.title,
       keySpecs: data.keySpecs,
@@ -35,7 +38,7 @@ const AddPost = () => {
 
     axios({
       method: "post",
-      url: "http://localhost:3003/posts",
+      url: "https://nagarikmart-backend.herokuapp.com/posts",
       headers: {
         "Content-type": "application/json",
         token: `Bearer ${localStorage.getItem("token")}`,
@@ -46,13 +49,11 @@ const AddPost = () => {
       data: finalData,
     })
       .then((res) => {
-        console.log(res);
-
         notify.showSuccess("Product Added");
+        setLoading(false);
       })
       .catch((err) => {
         notify.handleError(err.data);
-        console.log(err);
       });
   };
   return (
@@ -114,7 +115,6 @@ const AddPost = () => {
                   <option value="Computer">Computer</option>
                 </select>
               </div>
-
               <div className="form-group">
                 <label htmlFor="inputAddress2">Description</label>
                 <textarea
@@ -165,6 +165,11 @@ const AddPost = () => {
               <button type="submit" className="btn btn-primary">
                 Submit
               </button>
+              {loading && (
+                <div class="spinner-border text-success" role="status">
+                  <span class="sr-only">Loading...</span>
+                </div>
+              )}
             </form>
           </div>
         </div>

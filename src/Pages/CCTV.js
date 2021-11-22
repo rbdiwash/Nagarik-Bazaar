@@ -14,20 +14,17 @@ const CCTV = () => {
   useEffect(() => {
     axios({
       method: "get",
-      url: "http://localhost:3003/posts",
+      url: "https://nagarikmart-backend.herokuapp.com/posts",
     })
       .then((res) => {
-        console.log(res);
         setProducts(res?.data);
       })
       .catch((err) => {
         notify.handleError(err.data);
-        console.log(err);
       });
   }, [refresh]);
 
   const cctv = products.filter((arg) => arg.category === "CCTV");
-  console.log(cctv);
 
   const filteredData = cctv.filter((item) =>
     searchterm === ""
@@ -45,11 +42,11 @@ const CCTV = () => {
             <h3 className="py-3 col-lg-5 col-md-12">
               Available CCTV's ({cctv.length})
             </h3>
-            <div class="form-row py-lg-3 col-lg-7 col-md-12">
+            <div className="form-row py-lg-3 col-lg-7 col-md-12">
               <div className="form-group col-lg-11 col-md-10 col-sm-6">
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   id="search"
                   name="search"
                   placeholder="Search by Name, Key Specifications, Price"
@@ -68,10 +65,11 @@ const CCTV = () => {
           {filteredData?.reverse()?.map((arg) => (
             <ComputerCard
               productName={arg.title}
+              pid={arg._id}
               price={arg.priceAfter}
               discount={arg.priceBefore}
               brand={arg.keySpecs}
-              image={shop1}
+              image={arg.image[0]}
             />
           ))}
         </div>

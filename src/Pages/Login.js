@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Login.css";
 import pp from "../assets/img/mohan.jpg";
 import { useHistory } from "react-router";
@@ -17,14 +17,13 @@ const Login = () => {
   const onSubmit = (data) => {
     axios({
       method: "post",
-      url: "http://localhost:3003/auth/login",
+      url: "https://nagarikmart-backend.herokuapp.com/auth/login",
       data: {
         email: data.email,
         password: data.password,
       },
     })
       .then((res) => {
-        console.log(res);
         localStorage.setItem("userType", "Nagarik-Admin");
         localStorage.setItem("token", res.data.token);
         history.push("/admin");
@@ -32,7 +31,7 @@ const Login = () => {
         window.location.reload({ setTimeout: 3000 });
       })
       .catch((err) => {
-        notify.handleError(err.data);
+        notify.handleError(err?.response?.data?.message || "Error logging in");
         console.log(err.response);
       });
   };

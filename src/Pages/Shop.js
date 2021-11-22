@@ -1,17 +1,15 @@
 import React from "react";
 import shop1 from "../assets/img/computer.jpg";
-import shop2 from "../assets/img/computer.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Link } from "react-router-dom";
-// import ComputerCard from "../Components/ComputerCard";
 import { useEffect, useState } from "react";
 
 import ComputerCard from "../Components/ComputerCard";
 import PrinterCard from "../Components/PrinterCard";
 import axios from "axios";
 import notify from "../Notifu/notify";
-import Card from "../Components/ComputerCard";
+import Card from "../Components/PrinterCard";
 import EpabxCard from "../Components/epabxCard";
 import Modal from "../Components/Modal";
 import AOS from "aos";
@@ -44,10 +42,9 @@ const Shop = () => {
   useEffect(() => {
     axios({
       method: "get",
-      url: "http://localhost:3003/posts",
+      url: "https://nagarikmart-backend.herokuapp.com/posts",
     })
       .then((res) => {
-        console.log(res);
         setProducts(res?.data);
       })
       .catch((err) => {
@@ -59,9 +56,9 @@ const Shop = () => {
     });
   }, [refresh]);
 
-  const cctv = products.filter((arg) => arg.category === "CCTV");
-  const printer = products.filter((arg) => arg.category === "Printer");
   const computers = products.filter((arg) => arg.category === "Computer");
+  const printer = products.filter((arg) => arg.category === "Printer");
+  const cctv = products.filter((arg) => arg.category === "CCTV");
   const epabx = products.filter((arg) => arg.category === "EPABX");
 
   return (
@@ -126,23 +123,35 @@ const Shop = () => {
               >
                 {cctv.map((arg) => (
                   <div className="col-md-12">
-                    <div class="card p-3">
-                      <div class="row">
-                        <div class="col-12 col-md-5">
-                          <img src={shop1} alt="" className="img-fluid" />
+                    <div className="card p-3">
+                      <div className="row">
+                        <div className="col-12 col-md-5">
+                          <img
+                            src={arg.image[0]}
+                            alt=""
+                            className="img-fluid"
+                          />
                         </div>
-                        <div class="col-12 col-md-7 py-3 px-4">
+                        <div className="col-12 col-md-7 py-3 px-4">
                           <span>
-                            <i class="fa fa-heart mr-3" aria-hidden="true"></i>
-                            <i class="fa fa-headphones" aria-hidden="true"></i>
+                            <i
+                              className="fa fa-heart mr-3"
+                              aria-hidden="true"
+                            ></i>
+                            <i
+                              className="fa fa-headphones"
+                              aria-hidden="true"
+                            ></i>
                           </span>
-                          <p class="small font-weight-bold my-2">{arg.title}</p>
-                          <h6 class="mb-3">{arg.keySpecs}</h6>
+                          <p className="small font-weight-bold my-2">
+                            {arg.title}
+                          </p>
+                          <h6 className="mb-3">{arg.keySpecs}</h6>
                           <p>{arg?.description}</p>
-                          <div class="d-flex mb-3">
+                          <div className="d-flex mb-3">
                             <button
                               type="button"
-                              class="btn btn-success mr-3"
+                              className="btn btn-success mr-3"
                               data-toggle="modal"
                               data-target="#exampleModal"
                               onClick={() => {
@@ -153,7 +162,7 @@ const Shop = () => {
                             </button>
 
                             <Link to={`/shop/product/${arg?._id}`}>
-                              <button class="btn btn-outline-success">
+                              <button className="btn btn-outline-success">
                                 View Details
                               </button>
                             </Link>
@@ -228,21 +237,21 @@ const Shop = () => {
               <h1 className="py-3 pb-4  text-center">Computers</h1>
 
               {computers
-                .reverse()
-                ?.slice(0, 4)
+                ?.reverse()
+                ?.slice(0, 3)
                 ?.map((arg, index) => (
-                  <PrinterCard
+                  <ComputerCard
                     key={index}
                     pid={arg._id}
                     productName={arg.title}
                     price={arg.priceAfter}
                     discount={arg.priceBefore}
                     brand={arg.keySpecs}
-                    image={shop1}
+                    image={arg.image[0]}
                   />
                 ))}
             </div>
-            <div className="row">
+            <div className="row mt-4">
               <div className="col d-flex justify-content-end">
                 <Link to="/shop/computers">
                   <button
@@ -260,17 +269,17 @@ const Shop = () => {
             <div className="row" id="printer" data-aos="fade-right">
               <h1 className="py-3 pb-4  text-center">Printers</h1>
               {printer
-                .reverse()
+                ?.reverse()
                 ?.slice(0, 3)
                 ?.map((arg, index) => (
-                  <ComputerCard
+                  <PrinterCard
                     key={index}
                     pid={arg._id}
                     productName={arg.title}
                     price={arg.priceAfter}
                     discount={arg.priceBefore}
                     brand={arg.keySpecs}
-                    image={shop1}
+                    image={arg.image[0]}
                   />
                 ))}
             </div>
@@ -288,7 +297,7 @@ const Shop = () => {
               <h1 className="py-3 pb-4  text-center">CCTV</h1>
               {cctv
                 .reverse()
-                ?.slice(0, 4)
+                ?.slice(0, 3)
                 ?.map((arg, index) => (
                   <ComputerCard
                     key={index}
@@ -297,11 +306,11 @@ const Shop = () => {
                     price={arg.priceAfter}
                     discount={arg.priceBefore}
                     brand={arg.keySpecs}
-                    image={shop1}
+                    image={arg.image[0]}
                   />
                 ))}
             </div>
-            <div className="row">
+            <div className="row mt-4">
               <div className="col d-flex justify-content-end">
                 <Link to="/shop/cctv">
                   <button className="btn btn-primary">See All</button>
@@ -315,7 +324,7 @@ const Shop = () => {
               <h1 className="py-3 pb-4  text-center">EPABX</h1>
               {epabx
                 .reverse()
-                ?.slice(0, 4)
+                ?.slice(0, 3)
                 ?.map((arg, index) => (
                   <EpabxCard
                     key={index}
@@ -324,14 +333,19 @@ const Shop = () => {
                     price={arg.priceAfter}
                     discount={arg.priceBefore}
                     brand={arg.keySpecs}
-                    image={shop1}
+                    image={arg.image[0]}
                   />
                 ))}
             </div>
             <div className="row mt-4">
               <div className="col d-flex justify-content-end">
                 <Link to="/shop/epabx">
-                  <button className="btn text-white discBtn">See All</button>
+                  <button
+                    className="btn btn-warning text-white"
+                    style={{ background: "#f7810a" }}
+                  >
+                    See All
+                  </button>
                 </Link>
               </div>
             </div>

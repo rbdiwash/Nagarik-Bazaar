@@ -46,7 +46,6 @@ function customModal(message) {
         }}
       >
         This is message{message}
-        {console.log(message)}
       </div>
     </>
   );

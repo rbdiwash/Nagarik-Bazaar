@@ -1,7 +1,13 @@
 import "./App.css";
-import React from "react";
+import React, { useEffect } from "react";
 import "../src/assets/css/templatemo.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  useHistory,
+  HashRouter,
+} from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Homepage from "./Pages/Homepage";
 import About from "./Pages/About";
@@ -21,9 +27,16 @@ import ViewProducts from "./Pages/Admin/ViewProducts";
 import NotFound from "./Pages/NotFound";
 
 function App() {
+  const history = useHistory();
+  useEffect(() => {
+    const pathName = window.location.pathname;
+    if (pathName !== "/") {
+      history?.push(pathName);
+    }
+  }, []);
   return (
     <>
-      <Router>
+      <HashRouter>
         <ScrollToTop />
         <Navbar />
         <Switch>
@@ -47,7 +60,7 @@ function App() {
         </Switch>
         <Footer />
         <ToastContainer />
-      </Router>
+      </HashRouter>
     </>
   );
 }

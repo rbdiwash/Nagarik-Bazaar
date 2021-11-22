@@ -13,10 +13,9 @@ const Computers = () => {
   useEffect(() => {
     axios({
       method: "get",
-      url: "http://localhost:3003/posts",
+      url: "https://nagarikmart-backend.herokuapp.com/posts",
     })
       .then((res) => {
-        console.log(res);
         setProducts(res?.data);
       })
       .catch((err) => {
@@ -26,7 +25,6 @@ const Computers = () => {
   }, [refresh]);
 
   const computers = products.filter((arg) => arg.category === "Computer");
-  console.log(computers);
 
   const filteredData = computers.filter((item) =>
     searchterm === ""
@@ -44,11 +42,11 @@ const Computers = () => {
             <h3 className="py-3 col-lg-5 col-md-12">
               Available Computers ({computers.length})
             </h3>
-            <div class="form-row py-lg-3 col-lg-7 col-md-12">
+            <div className="form-row py-lg-3 col-lg-7 col-md-12">
               <div className="form-group col-lg-11 col-md-10 col-sm-6">
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   id="search"
                   name="search"
                   placeholder="Search by Name, Key Specifications, Price"
@@ -71,7 +69,7 @@ const Computers = () => {
               price={arg.priceAfter}
               discount={arg.priceBefore}
               brand={arg.keySpecs}
-              image={shop1}
+              image={arg.image[0]}
             />
           ))}
         </div>

@@ -1,55 +1,60 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-// import shop1 from "../assets/img/computer.png";
+import "./Printercard.css";
+import AOS from "aos";
 
-const Card = ({ pid, productName, price, discount, brand, image, key }) => {
+const ComputerCard = ({
+  pid,
+  productName,
+  price,
+  discount,
+  brand,
+  image,
+  key,
+}) => {
   const id = useParams();
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
   return (
     <>
-      <div className="col-lg-3 col-md-6" key={key}>
-        <div className="card mb-4 product-wap ">
-          <div className="card border-0">
-            <img alt=" " className="card-img  img-fluid" src={image} />
-            <div className="card-img-overlay  product-overlay d-flex align-items-center justify-content-center">
-              <ul className="list-unstyled">
-                <li>
-                  <a className="btn btn-primary text-white">
-                    <i className="far fa-heart"></i>
-                  </a>
-                </li>
-                <li>
-                  <Link
-                    to={`/shop/product/${pid}`}
-                    className="btn btn-primary text-white mt-2"
-                  >
-                    <i className="far fa-eye"></i>
-                  </Link>
-                </li>
-                <li>
-                  <a className="btn btn-primary text-white mt-2">
-                    <i className="fas fa-cart-plus"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
+      <div
+        className="col-lg-4 col-md-6 col-sm-12 printercard mb-4 mb-lg-0 mt-4"
+        data-aos="zoom-out"
+        key={key}
+      >
+        <div className="card h-100 shadow-sm">
+          <img src={`${image}`} className="card-img-top" alt="..." />
+          <div className="label-top shadow-sm discBtn">SELL</div>
           <div className="card-body">
-            <Link to={`/shop/product/${pid}`} className="text-decoration-none">
-              {productName}
-            </Link>
-            <p>{brand}</p>
-            <button
-              className="text-left mb-0 btn btn-primary "
-              style={{ padding: "2px 4px", borderRadius: "50rem" }}
-            >
-              <strike>Rs. {discount}</strike> Rs. {price}
-            </button>{" "}
+            <div className="clearfix mb-3">
+              {" "}
+              <span className="float-start badge rounded-pill bg-success">
+                <strike> Rs. {discount}</strike> Rs.{price}
+              </span>{" "}
+              <span className="float-end">
+                <Link className="text-muted small" to={`/shop/product/${pid}`}>
+                  Reviews
+                </Link>
+              </span>{" "}
+            </div>
+            <h5 className="card-title"> {productName}</h5>
+            <p> {brand}</p>
+            <div className="text-center my-2">
+              {" "}
+              <Link to={`/shop/product/${pid}`} className="btn btn-warning">
+                Check offer
+              </Link>{" "}
+            </div>
           </div>
         </div>
       </div>
+      {/* </div>
+      </div> */}
     </>
   );
 };
 
-export default Card;
+export default ComputerCard;

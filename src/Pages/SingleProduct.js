@@ -14,7 +14,7 @@ const SingleProduct = () => {
   useEffect(() => {
     axios({
       method: "get",
-      url: "http://localhost:3003/posts",
+      url: "https://nagarikmart-backend.herokuapp.com/posts",
     })
       .then((res) => {
         setProducts(res?.data);
@@ -25,7 +25,6 @@ const SingleProduct = () => {
       });
   }, [refresh]);
   const single = products?.filter((arg) => arg._id === id)[0];
-  console.log(single?.image?.map((arg) => arg));
   const [openModal, setOpenModal] = useState(false);
 
   return (
